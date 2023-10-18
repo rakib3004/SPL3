@@ -1,0 +1,1 @@
+"package DesignPatternConcepts.ObserverPattern;\n\npublic interface GoogleClassRoom {\n    public void addToClassRoom(Students students);\n\n    public void leftFromClassRoom(Students students);\n\n    public void notifyStudents(String message);\n}\n"
