@@ -1,0 +1,147 @@
+{
+    "package": "org.apache.hadoop.mapred",
+    "imports": [],
+    "classes": [
+        {
+            "name": "extends",
+            "methods": [
+                {
+                    "name": "WrappedProgressSplitsBlock",
+                    "args": [
+                        "public"
+                    ],
+                    "body": [
+                        "super(numberSplits);"
+                    ]
+                },
+                {
+                    "name": "burst",
+                    "args": [
+                        "public",
+                        "int[][]"
+                    ],
+                    "body": [
+                        "return super.burst();"
+                    ]
+                },
+                {
+                    "name": "getProgressWallclockTime",
+                    "args": [
+                        "public",
+                        "WrappedPeriodicStatsAccumulator"
+                    ],
+                    "body": [
+                        "if (wrappedProgressWallclockTime == null) {",
+                        "wrappedProgressWallclockTime = new WrappedPeriodicStatsAccumulator(",
+                        "progressWallclockTime);"
+                    ]
+                },
+                {
+                    "name": "getProgressCPUTime",
+                    "args": [
+                        "public",
+                        "WrappedPeriodicStatsAccumulator"
+                    ],
+                    "body": [
+                        "if (wrappedProgressCPUTime == null) {",
+                        "wrappedProgressCPUTime = new WrappedPeriodicStatsAccumulator(",
+                        "progressCPUTime);"
+                    ]
+                },
+                {
+                    "name": "getProgressVirtualMemoryKbytes",
+                    "args": [
+                        "public",
+                        "WrappedPeriodicStatsAccumulator"
+                    ],
+                    "body": [
+                        "if (wrappedProgressVirtualMemoryKbytes == null) {",
+                        "wrappedProgressVirtualMemoryKbytes = new WrappedPeriodicStatsAccumulator(",
+                        "progressVirtualMemoryKbytes);"
+                    ]
+                },
+                {
+                    "name": "getProgressPhysicalMemoryKbytes",
+                    "args": [
+                        "public",
+                        "WrappedPeriodicStatsAccumulator"
+                    ],
+                    "body": [
+                        "if (wrappedProgressPhysicalMemoryKbytes == null) {",
+                        "wrappedProgressPhysicalMemoryKbytes = new WrappedPeriodicStatsAccumulator(",
+                        "progressPhysicalMemoryKbytes);"
+                    ]
+                }
+            ]
+        }
+    ],
+    "methods": [
+        {
+            "name": "WrappedProgressSplitsBlock",
+            "args": [
+                "public"
+            ],
+            "body": [
+                "super(numberSplits);"
+            ]
+        },
+        {
+            "name": "burst",
+            "args": [
+                "public",
+                "int[][]"
+            ],
+            "body": [
+                "return super.burst();"
+            ]
+        },
+        {
+            "name": "getProgressWallclockTime",
+            "args": [
+                "public",
+                "WrappedPeriodicStatsAccumulator"
+            ],
+            "body": [
+                "if (wrappedProgressWallclockTime == null) {",
+                "wrappedProgressWallclockTime = new WrappedPeriodicStatsAccumulator(",
+                "progressWallclockTime);"
+            ]
+        },
+        {
+            "name": "getProgressCPUTime",
+            "args": [
+                "public",
+                "WrappedPeriodicStatsAccumulator"
+            ],
+            "body": [
+                "if (wrappedProgressCPUTime == null) {",
+                "wrappedProgressCPUTime = new WrappedPeriodicStatsAccumulator(",
+                "progressCPUTime);"
+            ]
+        },
+        {
+            "name": "getProgressVirtualMemoryKbytes",
+            "args": [
+                "public",
+                "WrappedPeriodicStatsAccumulator"
+            ],
+            "body": [
+                "if (wrappedProgressVirtualMemoryKbytes == null) {",
+                "wrappedProgressVirtualMemoryKbytes = new WrappedPeriodicStatsAccumulator(",
+                "progressVirtualMemoryKbytes);"
+            ]
+        },
+        {
+            "name": "getProgressPhysicalMemoryKbytes",
+            "args": [
+                "public",
+                "WrappedPeriodicStatsAccumulator"
+            ],
+            "body": [
+                "if (wrappedProgressPhysicalMemoryKbytes == null) {",
+                "wrappedProgressPhysicalMemoryKbytes = new WrappedPeriodicStatsAccumulator(",
+                "progressPhysicalMemoryKbytes);"
+            ]
+        }
+    ]
+}

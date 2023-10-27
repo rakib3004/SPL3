@@ -1,0 +1,167 @@
+{
+    "package": "org.apache.hadoop.mapred",
+    "imports": [
+        "java.io.IOException",
+        "java.net.InetSocketAddress",
+        "java.util.ArrayList",
+        "java.util.Collections",
+        "java.util.List",
+        "java.util.Set",
+        "java.util.concurrent.ConcurrentHashMap",
+        "java.util.concurrent.ConcurrentMap",
+        "java.util.concurrent.atomic.AtomicReference",
+        "org.slf4j.Logger",
+        "org.slf4j.LoggerFactory",
+        "org.apache.hadoop.classification.VisibleForTesting",
+        "org.apache.hadoop.conf.Configuration",
+        "org.apache.hadoop.fs.CommonConfigurationKeysPublic",
+        "org.apache.hadoop.ipc.ProtocolSignature",
+        "org.apache.hadoop.ipc.RPC",
+        "org.apache.hadoop.ipc.Server",
+        "org.apache.hadoop.mapred.SortedRanges.Range",
+        "org.apache.hadoop.mapreduce.MRJobConfig",
+        "org.apache.hadoop.mapreduce.TypeConverter",
+        "org.apache.hadoop.mapreduce.checkpoint.TaskCheckpointID",
+        "org.apache.hadoop.mapreduce.security.token.JobTokenSecretManager",
+        "org.apache.hadoop.mapreduce.util.MRJobConfUtil",
+        "org.apache.hadoop.mapreduce.v2.api.records.TaskAttemptId",
+        "org.apache.hadoop.mapreduce.v2.api.records.TaskId",
+        "org.apache.hadoop.mapreduce.v2.app.AppContext",
+        "org.apache.hadoop.mapreduce.v2.app.TaskAttemptListener",
+        "org.apache.hadoop.mapreduce.v2.app.TaskHeartbeatHandler",
+        "org.apache.hadoop.mapreduce.v2.app.job.Job",
+        "org.apache.hadoop.mapreduce.v2.app.job.Task",
+        "org.apache.hadoop.mapreduce.v2.app.job.event.TaskAttemptDiagnosticsUpdateEvent",
+        "org.apache.hadoop.mapreduce.v2.app.job.event.TaskAttemptEvent",
+        "org.apache.hadoop.mapreduce.v2.app.job.event.TaskAttemptEventType",
+        "org.apache.hadoop.mapreduce.v2.app.job.event.TaskAttemptFailEvent",
+        "org.apache.hadoop.mapreduce.v2.app.job.event.TaskAttemptStatusUpdateEvent",
+        "org.apache.hadoop.mapreduce.v2.app.job.event.TaskAttemptStatusUpdateEvent.TaskAttemptStatus",
+        "org.apache.hadoop.mapreduce.v2.app.rm.RMHeartbeatHandler",
+        "org.apache.hadoop.mapreduce.v2.app.rm.preemption.AMPreemptionPolicy",
+        "org.apache.hadoop.mapreduce.v2.app.security.authorize.MRAMPolicyProvider",
+        "org.apache.hadoop.net.NetUtils",
+        "org.apache.hadoop.security.authorize.PolicyProvider",
+        "org.apache.hadoop.service.CompositeService",
+        "org.apache.hadoop.util.StringInterner",
+        "org.apache.hadoop.util.Time",
+        "org.apache.hadoop.yarn.exceptions.YarnRuntimeException"
+    ],
+    "classes": [
+        {
+            "name": "extends",
+            "methods": [
+                {
+                    "name": "getAddress",
+                    "args": [
+                        "public",
+                        "InetSocketAddress"
+                    ],
+                    "body": [
+                        "return address;"
+                    ]
+                },
+                {
+                    "name": "getCheckpointID",
+                    "args": [
+                        "public",
+                        "TaskCheckpointID"
+                    ],
+                    "body": [
+                        "TaskId tid = TypeConverter.toYarn(taskId);",
+                        "return preemptionPolicy.getCheckpointID(tid);"
+                    ]
+                },
+                {
+                    "name": "setCheckpointID",
+                    "args": [
+                        "public",
+                        "void"
+                    ],
+                    "body": [
+                        "TaskId tid = TypeConverter.toYarn(taskId);",
+                        "preemptionPolicy.setCheckpointID(tid, cid);"
+                    ]
+                },
+                {
+                    "name": "update",
+                    "args": [
+                        "",
+                        "",
+                        "public",
+                        "void"
+                    ],
+                    "body": [
+                        "final double processedProgress =",
+                        "MRJobConfUtil.convertTaskProgressToFactor(progress);",
+                        "final double diffProgress = processedProgress - prevProgress;",
+                        "final long currentTime = Time.monotonicNow();",
+                        "boolean result =",
+                        "(Double.compare(diffProgress,",
+                        "MRJobConfUtil.getTaskProgressMinDeltaThreshold()) >= 0);",
+                        "if (!result) {",
+                        "// check if time has expired.",
+                        "result = ((currentTime - logTimeStamp)",
+                        ">= MRJobConfUtil.getTaskProgressWaitDeltaTimeThreshold());"
+                    ]
+                }
+            ]
+        }
+    ],
+    "methods": [
+        {
+            "name": "getAddress",
+            "args": [
+                "public",
+                "InetSocketAddress"
+            ],
+            "body": [
+                "return address;"
+            ]
+        },
+        {
+            "name": "getCheckpointID",
+            "args": [
+                "public",
+                "TaskCheckpointID"
+            ],
+            "body": [
+                "TaskId tid = TypeConverter.toYarn(taskId);",
+                "return preemptionPolicy.getCheckpointID(tid);"
+            ]
+        },
+        {
+            "name": "setCheckpointID",
+            "args": [
+                "public",
+                "void"
+            ],
+            "body": [
+                "TaskId tid = TypeConverter.toYarn(taskId);",
+                "preemptionPolicy.setCheckpointID(tid, cid);"
+            ]
+        },
+        {
+            "name": "update",
+            "args": [
+                "",
+                "",
+                "public",
+                "void"
+            ],
+            "body": [
+                "final double processedProgress =",
+                "MRJobConfUtil.convertTaskProgressToFactor(progress);",
+                "final double diffProgress = processedProgress - prevProgress;",
+                "final long currentTime = Time.monotonicNow();",
+                "boolean result =",
+                "(Double.compare(diffProgress,",
+                "MRJobConfUtil.getTaskProgressMinDeltaThreshold()) >= 0);",
+                "if (!result) {",
+                "// check if time has expired.",
+                "result = ((currentTime - logTimeStamp)",
+                ">= MRJobConfUtil.getTaskProgressWaitDeltaTimeThreshold());"
+            ]
+        }
+    ]
+}

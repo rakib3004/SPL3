@@ -5,106 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="525a854e-a402-4f46-85d3-cfee8ef63f56" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/jar/com.fasterxml.jackson.databind.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jar/com.fasterxml.jackson.databind.jar.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/DataBind.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/JavaToJSONConverter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaToJSON.iml" beforeDir="false" afterPath="$PROJECT_DIR$/JavaToJSON.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jar/META-INF/MANIFEST.MF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jar/META-INF/maven/com.fasterxml.jackson.core/jackson-core/pom.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jar/META-INF/maven/com.fasterxml.jackson.core/jackson-core/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jar/META-INF/services/com.fasterxml.jackson.core.JsonFactory" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jar/com/fasterxml/jackson/core/Base64Variant.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jar/com/fasterxml/jackson/core/Base64Variants.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jar/com/fasterxml/jackson/core/FormatSchema.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jar/com/fasterxml/jackson/core/JsonEncoding.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jar/com/fasterxml/jackson/core/JsonFactory$Feature.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jar/com/fasterxml/jackson/core/JsonFactory.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jar/com/fasterxml/jackson/core/JsonGenerationException.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jar/com/fasterxml/jackson/core/JsonGenerator$Feature.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jar/com/fasterxml/jackson/core/JsonGenerator.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jar/com/fasterxml/jackson/core/JsonLocation.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jar/com/fasterxml/jackson/core/JsonParseException.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jar/com/fasterxml/jackson/core/JsonParser$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jar/com/fasterxml/jackson/core/JsonParser$Feature.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jar/com/fasterxml/jackson/core/JsonParser$NumberType.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jar/com/fasterxml/jackson/core/JsonParser.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jar/com/fasterxml/jackson/core/JsonProcessingException.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jar/com/fasterxml/jackson/core/JsonStreamContext.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jar/com/fasterxml/jackson/core/JsonToken.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jar/com/fasterxml/jackson/core/ObjectCodec.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jar/com/fasterxml/jackson/core/PrettyPrinter.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jar/com/fasterxml/jackson/core/SerializableString.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jar/com/fasterxml/jackson/core/TreeNode.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jar/com/fasterxml/jackson/core/Version.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jar/com/fasterxml/jackson/core/Versioned.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jar/com/fasterxml/jackson/core/base/GeneratorBase$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jar/com/fasterxml/jackson/core/base/GeneratorBase.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jar/com/fasterxml/jackson/core/base/ParserBase.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jar/com/fasterxml/jackson/core/base/ParserMinimalBase$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jar/com/fasterxml/jackson/core/base/ParserMinimalBase.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jar/com/fasterxml/jackson/core/format/DataFormatDetector.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jar/com/fasterxml/jackson/core/format/DataFormatMatcher.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jar/com/fasterxml/jackson/core/format/InputAccessor$Std.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jar/com/fasterxml/jackson/core/format/InputAccessor.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jar/com/fasterxml/jackson/core/format/MatchStrength.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jar/com/fasterxml/jackson/core/io/BaseReader.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jar/com/fasterxml/jackson/core/io/CharTypes.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jar/com/fasterxml/jackson/core/io/CharacterEscapes.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jar/com/fasterxml/jackson/core/io/IOContext.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jar/com/fasterxml/jackson/core/io/InputDecorator.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jar/com/fasterxml/jackson/core/io/JsonStringEncoder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jar/com/fasterxml/jackson/core/io/MergedStream.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jar/com/fasterxml/jackson/core/io/NumberInput.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jar/com/fasterxml/jackson/core/io/NumberOutput.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jar/com/fasterxml/jackson/core/io/OutputDecorator.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jar/com/fasterxml/jackson/core/io/SegmentedStringWriter.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jar/com/fasterxml/jackson/core/io/SerializedString.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jar/com/fasterxml/jackson/core/io/UTF32Reader.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jar/com/fasterxml/jackson/core/io/UTF8Writer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jar/com/fasterxml/jackson/core/json/ByteSourceJsonBootstrapper$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jar/com/fasterxml/jackson/core/json/ByteSourceJsonBootstrapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jar/com/fasterxml/jackson/core/json/CoreVersion.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jar/com/fasterxml/jackson/core/json/JsonGeneratorImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jar/com/fasterxml/jackson/core/json/JsonReadContext.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jar/com/fasterxml/jackson/core/json/JsonWriteContext.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jar/com/fasterxml/jackson/core/json/ReaderBasedJsonParser$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jar/com/fasterxml/jackson/core/json/ReaderBasedJsonParser.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jar/com/fasterxml/jackson/core/json/UTF8JsonGenerator.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jar/com/fasterxml/jackson/core/json/UTF8StreamJsonParser$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jar/com/fasterxml/jackson/core/json/UTF8StreamJsonParser.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jar/com/fasterxml/jackson/core/json/VERSION.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jar/com/fasterxml/jackson/core/json/WriterBasedJsonGenerator.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jar/com/fasterxml/jackson/core/sym/BytesToNameCanonicalizer$Bucket.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jar/com/fasterxml/jackson/core/sym/BytesToNameCanonicalizer$TableInfo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jar/com/fasterxml/jackson/core/sym/BytesToNameCanonicalizer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jar/com/fasterxml/jackson/core/sym/CharsToNameCanonicalizer$Bucket.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jar/com/fasterxml/jackson/core/sym/CharsToNameCanonicalizer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jar/com/fasterxml/jackson/core/sym/Name.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jar/com/fasterxml/jackson/core/sym/Name1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jar/com/fasterxml/jackson/core/sym/Name2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jar/com/fasterxml/jackson/core/sym/Name3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jar/com/fasterxml/jackson/core/sym/NameN.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jar/com/fasterxml/jackson/core/type/ResolvedType.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jar/com/fasterxml/jackson/core/type/TypeReference.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jar/com/fasterxml/jackson/core/util/BufferRecycler$ByteBufferType.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jar/com/fasterxml/jackson/core/util/BufferRecycler$CharBufferType.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jar/com/fasterxml/jackson/core/util/BufferRecycler.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jar/com/fasterxml/jackson/core/util/ByteArrayBuilder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jar/com/fasterxml/jackson/core/util/DefaultPrettyPrinter$FixedSpaceIndenter.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jar/com/fasterxml/jackson/core/util/DefaultPrettyPrinter$Indenter.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jar/com/fasterxml/jackson/core/util/DefaultPrettyPrinter$Lf2SpacesIndenter.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jar/com/fasterxml/jackson/core/util/DefaultPrettyPrinter$NopIndenter.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jar/com/fasterxml/jackson/core/util/DefaultPrettyPrinter.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jar/com/fasterxml/jackson/core/util/Instantiatable.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jar/com/fasterxml/jackson/core/util/InternCache.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jar/com/fasterxml/jackson/core/util/JsonGeneratorDelegate.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jar/com/fasterxml/jackson/core/util/JsonParserDelegate.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jar/com/fasterxml/jackson/core/util/JsonParserSequence.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jar/com/fasterxml/jackson/core/util/MinimalPrettyPrinter.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jar/com/fasterxml/jackson/core/util/TextBuffer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jar/com/fasterxml/jackson/core/util/VersionUtil.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -195,20 +96,5 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/JavaToJSONConverter.java</url>
-          <line>5</line>
-          <properties class="JavaToJSONConverter" method="main">
-            <option name="EMULATED" value="true" />
-            <option name="WATCH_EXIT" value="false" />
-          </properties>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

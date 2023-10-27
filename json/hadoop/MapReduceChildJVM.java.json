@@ -1,0 +1,24 @@
+{
+    "package": "org.apache.hadoop.mapred",
+    "imports": [
+        "java.net.InetSocketAddress",
+        "java.util.List",
+        "java.util.Map",
+        "java.util.Vector",
+        "org.apache.hadoop.fs.Path",
+        "org.apache.hadoop.mapred.TaskLog.LogName",
+        "org.apache.hadoop.mapreduce.MRJobConfig",
+        "org.apache.hadoop.mapreduce.TaskType",
+        "org.apache.hadoop.mapreduce.v2.util.MRApps",
+        "org.apache.hadoop.yarn.api.ApplicationConstants",
+        "org.apache.hadoop.yarn.api.ApplicationConstants.Environment",
+        "org.apache.hadoop.yarn.conf.YarnConfiguration"
+    ],
+    "classes": [
+        {
+            "name": "",
+            "methods": []
+        }
+    ],
+    "methods": []
+}

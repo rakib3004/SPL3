@@ -1,0 +1,31 @@
+{
+    "package": "org.apache.hadoop.mapred",
+    "imports": [],
+    "classes": [
+        {
+            "name": "extends",
+            "methods": [
+                {
+                    "name": "WrappedJvmID",
+                    "args": [
+                        "public"
+                    ],
+                    "body": [
+                        "super(jobID, mapTask, nextLong);"
+                    ]
+                }
+            ]
+        }
+    ],
+    "methods": [
+        {
+            "name": "WrappedJvmID",
+            "args": [
+                "public"
+            ],
+            "body": [
+                "super(jobID, mapTask, nextLong);"
+            ]
+        }
+    ]
+}

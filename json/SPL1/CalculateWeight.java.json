@@ -1,0 +1,15 @@
+{
+    "package": "MultiVariableRegression",
+    "imports": [
+        "FilePackage.DateTimeWriter",
+        "ResultPackage.MLR_Result",
+        "ObjectOriented.PriorityData"
+    ],
+    "classes": [
+        {
+            "name": "",
+            "methods": []
+        }
+    ],
+    "methods": []
+}

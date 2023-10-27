@@ -1,0 +1,65 @@
+{
+    "package": "workshop.FizzBuzzModule",
+    "imports": [],
+    "classes": [
+        {
+            "name": "implements",
+            "methods": [
+                {
+                    "name": "matches",
+                    "args": [
+                        "",
+                        "",
+                        "public",
+                        "boolean"
+                    ],
+                    "body": [
+                        "// TODO Auto-generated method stub",
+                        "return number % 7 == 0;"
+                    ]
+                },
+                {
+                    "name": "generateResponse",
+                    "args": [
+                        "",
+                        "",
+                        "public",
+                        "String"
+                    ],
+                    "body": [
+                        "// TODO Auto-generated method stub",
+                        "return \"FizzBuzz\";"
+                    ]
+                }
+            ]
+        }
+    ],
+    "methods": [
+        {
+            "name": "matches",
+            "args": [
+                "",
+                "",
+                "public",
+                "boolean"
+            ],
+            "body": [
+                "// TODO Auto-generated method stub",
+                "return number % 7 == 0;"
+            ]
+        },
+        {
+            "name": "generateResponse",
+            "args": [
+                "",
+                "",
+                "public",
+                "String"
+            ],
+            "body": [
+                "// TODO Auto-generated method stub",
+                "return \"FizzBuzz\";"
+            ]
+        }
+    ]
+}

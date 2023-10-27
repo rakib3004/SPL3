@@ -1,0 +1,308 @@
+{
+    "package": "MultiVariableRegression",
+    "imports": [
+        "FilePackage.DateTimeWriter",
+        "java.util.Collection",
+        "java.util.Collections",
+        "java.util.List"
+    ],
+    "classes": [
+        {
+            "name": "",
+            "methods": [
+                {
+                    "name": "medianCalculationMethods",
+                    "args": [
+                        "",
+                        "",
+                        "public",
+                        "void"
+                    ],
+                    "body": [
+                        "String className = this.getClass().getSimpleName();",
+                        "DateTimeWriter dateTimeWriter = new DateTimeWriter();",
+                        "dateTimeWriter.dateTimeWriterMethods(className);",
+                        "Collections.sort(list);",
+                        "System.out.println(list);",
+                        "sizeA = list.size();",
+                        "findMinimumValue(list);",
+                        "findMaximumValue(list);",
+                        "findMedianValue(list);",
+                        "findFirstQuartileValue(list);",
+                        "findThirdQuartileValue(list);",
+                        "findInterQuartileRange(list);",
+                        "findLowerAdjacentValue(list);",
+                        "findUpperAdjacentValue(list);",
+                        ""
+                    ]
+                },
+                {
+                    "name": "findMinimumValue",
+                    "args": [
+                        "",
+                        "",
+                        "public",
+                        "void"
+                    ],
+                    "body": [
+                        "System.out.println(\"Minimum value : \" + list.get(0));"
+                    ]
+                },
+                {
+                    "name": "findFirstQuartileValue",
+                    "args": [
+                        "",
+                        "",
+                        "public",
+                        "void"
+                    ],
+                    "body": [
+                        "",
+                        "double q1 = sizeA / 4;",
+                        "firstQuartile = (int) q1;",
+                        "double checkFloor = q1 - firstQuartile;",
+                        "if (checkFloor > 0.5) {",
+                        "firstQuartile++;",
+                        "} else {",
+                        "firstQuartile++;",
+                        "firstQuartile--;"
+                    ]
+                },
+                {
+                    "name": "findMedianValue",
+                    "args": [
+                        "",
+                        "",
+                        "public",
+                        "void"
+                    ],
+                    "body": [
+                        "double median, median1, median2;",
+                        "if (sizeA % 2 == 1) {",
+                        "median = list.get(sizeA / 2);",
+                        "} else {",
+                        "median1 = list.get(sizeA / 2);",
+                        "median2 = list.get((sizeA - 1) / 2);",
+                        "median = (median1 + median2) / 2;"
+                    ]
+                },
+                {
+                    "name": "findThirdQuartileValue",
+                    "args": [
+                        "",
+                        "",
+                        "public",
+                        "void"
+                    ],
+                    "body": [
+                        "double q2 = (3 * sizeA) / 4;",
+                        "thirdQuartile = (int) q2;",
+                        "double checkFloor = q2 - thirdQuartile;",
+                        "if (checkFloor > 0.5) {",
+                        "thirdQuartile++;",
+                        "} else {",
+                        "thirdQuartile++;",
+                        "thirdQuartile--;"
+                    ]
+                },
+                {
+                    "name": "findMaximumValue",
+                    "args": [
+                        "",
+                        "",
+                        "public",
+                        "void"
+                    ],
+                    "body": [
+                        "System.out.println(\"Maximum Value : \" + list.get(sizeA - 1));"
+                    ]
+                },
+                {
+                    "name": "findInterQuartileRange",
+                    "args": [
+                        "",
+                        "",
+                        "public",
+                        "void"
+                    ],
+                    "body": [
+                        "interQuartileRange = list.get(thirdQuartile) - list.get(firstQuartile);"
+                    ]
+                },
+                {
+                    "name": "findLowerAdjacentValue",
+                    "args": [
+                        "",
+                        "",
+                        "public",
+                        "void"
+                    ],
+                    "body": [
+                        "double lowerAdjacentValue = firstQuartile - (1.5 * interQuartileRange);",
+                        "System.out.println(\"Lower Adjacent Value : \" + lowerAdjacentValue);"
+                    ]
+                },
+                {
+                    "name": "findUpperAdjacentValue",
+                    "args": [
+                        "",
+                        "",
+                        "public",
+                        "void"
+                    ],
+                    "body": [
+                        "double upperAdjacentValue = thirdQuartile + (1.5 * interQuartileRange);",
+                        "System.out.println(\"Upper Adjacent Value : \" + upperAdjacentValue);"
+                    ]
+                }
+            ]
+        }
+    ],
+    "methods": [
+        {
+            "name": "medianCalculationMethods",
+            "args": [
+                "",
+                "",
+                "public",
+                "void"
+            ],
+            "body": [
+                "String className = this.getClass().getSimpleName();",
+                "DateTimeWriter dateTimeWriter = new DateTimeWriter();",
+                "dateTimeWriter.dateTimeWriterMethods(className);",
+                "Collections.sort(list);",
+                "System.out.println(list);",
+                "sizeA = list.size();",
+                "findMinimumValue(list);",
+                "findMaximumValue(list);",
+                "findMedianValue(list);",
+                "findFirstQuartileValue(list);",
+                "findThirdQuartileValue(list);",
+                "findInterQuartileRange(list);",
+                "findLowerAdjacentValue(list);",
+                "findUpperAdjacentValue(list);",
+                ""
+            ]
+        },
+        {
+            "name": "findMinimumValue",
+            "args": [
+                "",
+                "",
+                "public",
+                "void"
+            ],
+            "body": [
+                "System.out.println(\"Minimum value : \" + list.get(0));"
+            ]
+        },
+        {
+            "name": "findFirstQuartileValue",
+            "args": [
+                "",
+                "",
+                "public",
+                "void"
+            ],
+            "body": [
+                "",
+                "double q1 = sizeA / 4;",
+                "firstQuartile = (int) q1;",
+                "double checkFloor = q1 - firstQuartile;",
+                "if (checkFloor > 0.5) {",
+                "firstQuartile++;",
+                "} else {",
+                "firstQuartile++;",
+                "firstQuartile--;"
+            ]
+        },
+        {
+            "name": "findMedianValue",
+            "args": [
+                "",
+                "",
+                "public",
+                "void"
+            ],
+            "body": [
+                "double median, median1, median2;",
+                "if (sizeA % 2 == 1) {",
+                "median = list.get(sizeA / 2);",
+                "} else {",
+                "median1 = list.get(sizeA / 2);",
+                "median2 = list.get((sizeA - 1) / 2);",
+                "median = (median1 + median2) / 2;"
+            ]
+        },
+        {
+            "name": "findThirdQuartileValue",
+            "args": [
+                "",
+                "",
+                "public",
+                "void"
+            ],
+            "body": [
+                "double q2 = (3 * sizeA) / 4;",
+                "thirdQuartile = (int) q2;",
+                "double checkFloor = q2 - thirdQuartile;",
+                "if (checkFloor > 0.5) {",
+                "thirdQuartile++;",
+                "} else {",
+                "thirdQuartile++;",
+                "thirdQuartile--;"
+            ]
+        },
+        {
+            "name": "findMaximumValue",
+            "args": [
+                "",
+                "",
+                "public",
+                "void"
+            ],
+            "body": [
+                "System.out.println(\"Maximum Value : \" + list.get(sizeA - 1));"
+            ]
+        },
+        {
+            "name": "findInterQuartileRange",
+            "args": [
+                "",
+                "",
+                "public",
+                "void"
+            ],
+            "body": [
+                "interQuartileRange = list.get(thirdQuartile) - list.get(firstQuartile);"
+            ]
+        },
+        {
+            "name": "findLowerAdjacentValue",
+            "args": [
+                "",
+                "",
+                "public",
+                "void"
+            ],
+            "body": [
+                "double lowerAdjacentValue = firstQuartile - (1.5 * interQuartileRange);",
+                "System.out.println(\"Lower Adjacent Value : \" + lowerAdjacentValue);"
+            ]
+        },
+        {
+            "name": "findUpperAdjacentValue",
+            "args": [
+                "",
+                "",
+                "public",
+                "void"
+            ],
+            "body": [
+                "double upperAdjacentValue = thirdQuartile + (1.5 * interQuartileRange);",
+                "System.out.println(\"Upper Adjacent Value : \" + upperAdjacentValue);"
+            ]
+        }
+    ]
+}

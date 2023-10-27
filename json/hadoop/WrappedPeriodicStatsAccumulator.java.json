@@ -1,0 +1,51 @@
+{
+    "package": "org.apache.hadoop.mapred",
+    "imports": [],
+    "classes": [
+        {
+            "name": "",
+            "methods": [
+                {
+                    "name": "WrappedPeriodicStatsAccumulator",
+                    "args": [
+                        "public"
+                    ],
+                    "body": [
+                        "this.real = real;"
+                    ]
+                },
+                {
+                    "name": "extend",
+                    "args": [
+                        "public",
+                        "void"
+                    ],
+                    "body": [
+                        "real.extend(newProgress, newValue);"
+                    ]
+                }
+            ]
+        }
+    ],
+    "methods": [
+        {
+            "name": "WrappedPeriodicStatsAccumulator",
+            "args": [
+                "public"
+            ],
+            "body": [
+                "this.real = real;"
+            ]
+        },
+        {
+            "name": "extend",
+            "args": [
+                "public",
+                "void"
+            ],
+            "body": [
+                "real.extend(newProgress, newValue);"
+            ]
+        }
+    ]
+}
