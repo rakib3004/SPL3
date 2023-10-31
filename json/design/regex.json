@@ -1,4 +1,14 @@
 {
+    "package": [
+        "FilePackage",
+        "ObjectOriented",
+        "SoftwareDesign"
+    ],
+    "imports": [
+        "PriorityData",
+        "Buffer",
+        "Cache"
+    ],
     "classes": [
         {
             "name": "OutputWriter",

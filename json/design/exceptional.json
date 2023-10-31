@@ -1,0 +1,12 @@
+{
+  "package": [],
+"imports": [],
+    "classes": [
+      {
+        "name": "LibraryCard",
+        "methods": ["borrowBook", "returnBook", "updateValidity", "History"],
+        "relationship": []
+      }
+    ]
+  }
+  

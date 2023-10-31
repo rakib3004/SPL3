@@ -1,0 +1,22 @@
+{
+  "classes": [
+    {
+      "name": "Employee",
+      "methods": ["Employee", "hire", "main"],
+      "relationship": [
+        {
+          "className": "Company",
+          "type": "Association"
+        },
+        {
+          "className": "Employable",
+          "type": "Realization"
+        },
+        {
+          "className": "Person",
+          "type": "Generalization"
+        }
+      ]
+    }
+  ]
+}
