@@ -1,0 +1,19 @@
+{
+    "package": [
+        "workshop.FizzBuzzModule"
+    ],
+    "imports": [],
+    "classes": [
+        {
+            "name": "BuzzPatternMatcher",
+            "methods": [
+                {
+                    "name": "matches"
+                },
+                {
+                    "name": "generateResponse"
+                }
+            ]
+        }
+    ]
+}

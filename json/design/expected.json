@@ -1,0 +1,53 @@
+{
+    "package": [
+        "FizzModule", "BuzzModule"
+    ],
+    "imports": [
+        "com.cloud.vm.VirtualMachine","com.cloud.vm.VirtualMachine.Powerstate"
+    ],
+    "classes": [
+        {
+            "name": "BuzzPatternMatcher",
+            "methods": [
+                {
+                    "name": "matches",
+                    "calls" : ["buzzMatch", "fizzMatch"]
+                },
+                {
+                    "name": "generateResponse",
+                    "calls" : ["sendRequest", "convertResponse"]
+                }
+            ],
+            "relationship": [
+                {
+               "name": "NullResponse",
+                "type": "Association"
+                },
+                {
+                    "name" : "PatternMatcher",
+                    "type" : "Realization"
+
+                },
+                {
+                    "name" : "Matcher",
+                    "type" : "Generalization"
+                }
+            ]
+        },
+        {
+            "name": "OutputWriter",
+            "methods": [
+                {
+                    "name": "outputWriterMethods",
+                    "calls" : ["buffer", "stream"]
+                },
+                {
+                    "name": "inputWriterMethods"
+                },
+                {
+                    "name": "inputWriterMethods"
+                }
+            ]
+        }
+    ]
+}

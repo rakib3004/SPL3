@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="525a854e-a402-4f46-85d3-cfee8ef63f56" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/uml-json/primary.json" beforeDir="false" afterPath="$PROJECT_DIR$/uml-json/primary.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,7 +43,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "C:/Users/pc/IdeaProjects/JavaToJSON/jar/jackson-annotations-2.1.2.jar",
+    "last_opened_file_path": "C:/Users/pc/Documents/Github/SPL3",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2"

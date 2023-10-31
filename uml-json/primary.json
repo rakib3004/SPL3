@@ -1,0 +1,87 @@
+{
+  "classes": [
+    {
+      "name": "Dashboard",
+      "imports": [],
+      "methods": []
+    },
+    {
+      "name": "DatabaseArtifact",
+      "imports": [],
+      "methods": [
+        "getTitle",
+        "getTable"
+      ]
+    },
+    {
+      "name": "Finance",
+      "imports": [],
+      "methods": [
+        "getForm",
+        "chooseSemester"
+      ]
+    },
+    {
+      "name": "Payment",
+      "imports": [],
+      "methods": [
+        "getPaymentDashboard",
+        "confirmationPopUp",
+        "payment"
+      ]
+    },
+    {
+      "name": "StudentDashboard",
+      "imports": ["Dashboard", "DatabaseArtifact", "Finance", "Payment"],
+      "methods": [
+        "view",
+        "apply",
+        "paymentActions"
+      ]
+    }
+  ],
+  "relationships": [
+    {
+      "class1": "StudentDashboard",
+      "class2": "Dashboard",
+      "type": "inheritance"
+    }
+  ],
+  "methodCalls": [
+    {
+      "caller": "view",
+      "callee": "getTitle",
+      "class": "DatabaseArtifact"
+    },
+    {
+      "caller": "view",
+      "callee": "getTable",
+      "class": "DatabaseArtifact"
+    },
+    {
+      "caller": "apply",
+      "callee": "getForm",
+      "class": "Finance"
+    },
+    {
+      "caller": "apply",
+      "callee": "chooseSemester",
+      "class": "Finance"
+    },
+    {
+      "caller": "paymentActions",
+      "callee": "getPaymentDashboard",
+      "class": "Payment"
+    },
+    {
+      "caller": "paymentActions",
+      "callee": "confirmationPopUp",
+      "class": "Payment"
+    },
+    {
+      "caller": "paymentActions",
+      "callee": "payment",
+      "class": "Payment"
+    }
+  ]
+}

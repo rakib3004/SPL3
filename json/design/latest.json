@@ -1,0 +1,28 @@
+{
+    "package": [
+        "FilePackage",
+        "ObjectOriented",
+        "SoftwareDesign"
+    ],
+    "imports": [
+        "PriorityData",
+        "Buffer",
+        "Cache"
+    ],
+    "classes": [
+        {
+            "name": "OutputWriter",
+            "methods": [
+                {
+                    "name": "outputWriterMethods"
+                },
+                {
+                    "name": "inputWriterMethods"
+                },
+                {
+                    "name": "inputWriterMethods"
+                }
+            ]
+        }
+    ]
+}

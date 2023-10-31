@@ -1,0 +1,22 @@
+{
+    "package": [
+        "FizzModule", "BuzzModule"
+    ],
+    "imports": [
+        "com.cloud.vm.VirtualMachine","com.cloud.vm.VirtualMachine.Powerstate"
+    ],
+    "classes": [
+    
+        {
+            "name": "BuzzPatternMatcher",
+            "methods": [
+                {
+                    "name": "matches"
+                },
+                {
+                    "name": "generateResponse"
+                }
+            ]
+        }
+    ]
+}
