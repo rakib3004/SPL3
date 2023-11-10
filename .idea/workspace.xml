@@ -5,16 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="525a854e-a402-4f46-85d3-cfee8ef63f56" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/gang-of-four-design-patterns/creational-patterns/signleton-pattern/EagerInitializedSingleton.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gang-of-four-design-patterns/creational-patterns/signleton-pattern/LazyInitializedSingleton.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gang-of-four-design-patterns/creational-patterns/signleton-pattern/StaticBlockSingleton.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gang-of-four-design-patterns/creational-patterns/signleton-pattern/ThreadSafeSingleton.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UMLJsonConverterFromCode.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/UMLJsonConverterFromCode.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/json/design/expectedTerms.txt" beforeDir="false" afterPath="$PROJECT_DIR$/json/design/expectedTerms.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DataBind.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/JavaToJSON/DataBind.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/JavaToJSONConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/JavaToJSON/JavaToJSONConverter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/JavaToJSON/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,19 +36,19 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "jdk.selected.JAVA_MODULE": "11",
-    "last_opened_file_path": "C:/Users/pc/Documents/Github/software-maintenance",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;11&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/pc/Documents/Github/software-maintenance&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\pc\IdeaProjects\JavaToJSON\src\json" />
