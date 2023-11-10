@@ -1,11 +1,9 @@
-interface
-abstraction class
-enum
+interface || abstraction class
 inheritence
+enum
+association
 
 
-
-product
-banker
-employee
+methods
+calls
 

@@ -1,3 +1,5 @@
+package JavaToJSON;
+
 import com.fasterxml.jackson.databind.ObjectMapper;
 
 import java.io.*;

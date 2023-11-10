@@ -5,8 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="525a854e-a402-4f46-85d3-cfee8ef63f56" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/gang-of-four-design-patterns/creational-patterns/signleton-pattern/EagerInitializedSingleton.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gang-of-four-design-patterns/creational-patterns/signleton-pattern/LazyInitializedSingleton.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gang-of-four-design-patterns/creational-patterns/signleton-pattern/StaticBlockSingleton.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gang-of-four-design-patterns/creational-patterns/signleton-pattern/ThreadSafeSingleton.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/uml-json/primary.json" beforeDir="false" afterPath="$PROJECT_DIR$/uml-json/primary.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UMLJsonConverterFromCode.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/UMLJsonConverterFromCode.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/json/design/expectedTerms.txt" beforeDir="false" afterPath="$PROJECT_DIR$/json/design/expectedTerms.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DataBind.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/JavaToJSON/DataBind.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/JavaToJSONConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/JavaToJSON/JavaToJSONConverter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/JavaToJSON/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,7 +51,8 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "C:/Users/pc/Documents/Github/SPL3",
+    "jdk.selected.JAVA_MODULE": "11",
+    "last_opened_file_path": "C:/Users/pc/Documents/Github/software-maintenance",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2"
@@ -53,24 +62,30 @@
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\pc\IdeaProjects\JavaToJSON\src\json" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\pc\Documents\Github\SPL3\src\DesignPatterns" />
+      <recent name="C:\Users\pc\Documents\Github\SPL3\src\DesignPatterns\behavioral-patterns" />
+      <recent name="C:\Users\pc\Documents\Github\SPL3\src" />
+      <recent name="C:\Users\pc\Documents\Github\SPL3\gang-of-four-design-patterns\creational-patterns" />
+    </key>
   </component>
   <component name="RunManager" selected="Application.JavaToJSONConverter">
     <configuration name="DataBind" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="DataBind" />
+      <option name="MAIN_CLASS_NAME" value="JavaToJSON.DataBind" />
       <module name="JavaToJSON" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <configuration name="JavaToJSONConverter" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="JavaToJSONConverter" />
+      <option name="MAIN_CLASS_NAME" value="JavaToJSON.JavaToJSONConverter" />
       <module name="JavaToJSON" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Main" />
+      <option name="MAIN_CLASS_NAME" value="JavaToJSON.Main" />
       <module name="JavaToJSON" />
       <method v="2">
         <option name="Make" enabled="true" />
