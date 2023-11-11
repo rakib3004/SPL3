@@ -6,14 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="525a854e-a402-4f46-85d3-cfee8ef63f56" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DesignPatterns/CreationalPatterns/SignletonPattern/BillPughSingleton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DesignPatterns/CreationalPatterns/SignletonPattern/BillPughSingleton.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DesignPatterns/CreationalPatterns/SignletonPattern/EnumSingleton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DesignPatterns/CreationalPatterns/SignletonPattern/EnumSingleton.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DesignPatterns/CreationalPatterns/SignletonPattern/LazyInitializedSingleton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DesignPatterns/CreationalPatterns/SignletonPattern/LazyInitializedSingleton.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DesignPatterns/CreationalPatterns/SignletonPattern/ReflectionSingletonTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DesignPatterns/CreationalPatterns/SignletonPattern/ReflectionSingletonTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DesignPatterns/CreationalPatterns/SignletonPattern/SerializedSingleton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DesignPatterns/CreationalPatterns/SignletonPattern/SerializedSingleton.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DesignPatterns/CreationalPatterns/SignletonPattern/SingletonSerializedTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DesignPatterns/CreationalPatterns/SignletonPattern/SingletonSerializedTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DesignPatterns/CreationalPatterns/SignletonPattern/StaticBlockSingleton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DesignPatterns/CreationalPatterns/SignletonPattern/StaticBlockSingleton.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DesignPatterns/CreationalPatterns/SignletonPattern/ThreadSafeSingleton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DesignPatterns/CreationalPatterns/SignletonPattern/ThreadSafeSingleton.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DesignPatterns/CreationalPatterns/AbstractFactoryPattern/Computer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DesignPatterns/CreationalPatterns/AbstractFactoryPattern/Computer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DesignPatterns/CreationalPatterns/AbstractFactoryPattern/PC.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DesignPatterns/CreationalPatterns/AbstractFactoryPattern/PC.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
