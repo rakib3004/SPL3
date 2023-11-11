@@ -1,0 +1,1 @@
+package DesignPatterns.CreationalPatterns.PrototypePattern;
