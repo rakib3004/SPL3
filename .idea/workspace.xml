@@ -6,8 +6,13 @@
   <component name="ChangeListManager">
     <list default="true" id="525a854e-a402-4f46-85d3-cfee8ef63f56" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DesignPatterns/CreationalPatterns/AbstractFactoryPattern/Computer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DesignPatterns/CreationalPatterns/AbstractFactoryPattern/Computer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DesignPatterns/CreationalPatterns/AbstractFactoryPattern/PC.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DesignPatterns/CreationalPatterns/AbstractFactoryPattern/PC.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DesignPatterns/StructuralPatterns/AdapterPattern/AdapterPatternTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DesignPatterns/StructuralPatterns/AdapterPattern/AdapterPatternTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DesignPatterns/StructuralPatterns/AdapterPattern/Socket.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DesignPatterns/StructuralPatterns/AdapterPattern/Socket.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DesignPatterns/StructuralPatterns/AdapterPattern/SocketAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DesignPatterns/StructuralPatterns/AdapterPattern/SocketAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DesignPatterns/StructuralPatterns/AdapterPattern/SocketClassAdapterImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DesignPatterns/StructuralPatterns/AdapterPattern/SocketClassAdapterImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DesignPatterns/StructuralPatterns/AdapterPattern/SocketObjectAdapterImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DesignPatterns/StructuralPatterns/AdapterPattern/SocketObjectAdapterImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DesignPatterns/StructuralPatterns/AdapterPattern/Volt.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DesignPatterns/StructuralPatterns/AdapterPattern/Volt.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DesignPatterns/StructuralPatterns/CompositePattern/Shape.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DesignPatterns/StructuralPatterns/CompositePattern/Shape.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

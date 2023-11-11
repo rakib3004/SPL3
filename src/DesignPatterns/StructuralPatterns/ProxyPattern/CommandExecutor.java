@@ -1,1 +1,6 @@
-package DesignPatterns.StructuralPatterns.FlyweightPattern;
+package DesignPatterns.StructuralPatterns.ProxyPattern;
+
+public interface CommandExecutor {
+
+    public void runCommand(String cmd) throws Exception;
+}
