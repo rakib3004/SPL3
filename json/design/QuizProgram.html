@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Math MCQ Quiz with Calculator</title>
+    <style>
+      h1 {
+        color: #333;
+      }
+
+      form {
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+
+      ol {
+        list-style: none;
+        padding: 0;
+      }
+
+      li {
+        margin-bottom: 20px;
+      }
+
+      h3 {
+        margin-bottom: 10px;
+        color: #333;
+      }
+
+      input[type="radio"] {
+        margin-right: 5px;
+      }
+
+      input[type="submit"] {
+        background-color: skyblue;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 16px;
+      }
+
+      input[type="submit"]:hover {
+        background-color: skyblue;
+      }
+      body {
+        margin: 0;
+        padding: 0;
+    
+      }
+
+      #quiz-container,
+      #calculator-container {
+        flex: 1;
+        box-sizing: border-box;
+        overflow: hidden;
+      }
+
+      #quiz-container {
+        background-color: #f0f0f0; /* Adjust the background color as needed */
+        border-bottom: 1px solid #ccc; /* Add a border between the sections if desired */
+      }
+
+      #calculator-container {
+        background-color: #fff; /* Adjust the background color as needed */
+     margin-top: 30px;
+    }
+
+      * {
+        box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+      }
+      .wrap {
+        width: 300px;
+        margin: auto;
+        height: 380px;
+        background: gray;
+        border: 3px solid black;
+        padding: 10px;
+        border-radius: 20px;
+      }
+      input[type="text"] {
+        background-color: lightsteelblue;
+        width: 100%;
+        padding: 4px;
+        font-size: 15px;
+        font-height: bold;
+        margin-top: 15px;
+        border-radius: 4px;
+        border-color: black;
+      }
+      input[type="button"] {
+        background-color: brown;
+        color: white;
+        width: 54px;
+        padding: 4px;
+        font-size: 15px;
+        font-height: bold;
+        border-radius: 4px;
+        border-color: black;
+      }
+      #del {
+        width: 48%;
+      }
+      input:hover {
+        background-color: orange;
+        color: black;
+      }
+    
+        .heading {
+            text-align: center;
+        }
+
+        .body {
+            display: flex;
+        }
+    </style>
+  </head>
+
+  <body>
+    <div class="heading">
+    <h1>Math MCQ Quiz</h1>
+    </div>
+
+    <div class="body">
+    <div id="quiz-container">
+      <form id="quizForm">
+        <ol id="questionsList"></ol>
+        <input type="submit" value="Submit" />
+      </form>
+
+      <div class="button_container">
+        <button class="back_button" onclick="window.location.href='home.html'">
+          Back to Home
+        </button>
+      </div>
+    </div>
+
+  <!-- Calculator Part -->
+    <div id="calculator-container">
+      <div class="wrap">
+        <form name="cal">
+          <input type="text" name="display" />
+          <br /><br />
+
+          <input type="button" value="7" onclick="cal.display.value+='7'" />
+          <input type="button" value="8" onclick="cal.display.value+='8'" />
+          <input type="button" value="9" onclick="cal.display.value+='9'" />
+          <input type="button" value="+" onclick="cal.display.value+='+'" />
+          <br /><br />
+          <input type="button" value="4" onclick="cal.display.value+='4'" />
+          <input type="button" value="5" onclick="cal.display.value+='5'" />
+          <input type="button" value="6" onclick="cal.display.value+='6'" />
+          <input type="button" value="-" onclick="cal.display.value+='-'" />
+          <br /><br />
+          <input type="button" value="1" onclick="cal.display.value+='1'" />
+          <input type="button" value="2" onclick="cal.display.value+='2'" />
+          <input type="button" value="3" onclick="cal.display.value+='3'" />
+          <input type="button" value="X" onclick="cal.display.value+=''" />
+          <br /><br />
+          <input type="button" value="0" onclick="cal.display.value+='0'" />
+          <input type="button" value="/" onclick="cal.display.value+='/'" />
+          <input type="button" value="%" onclick="cal.display.value+='%'" />
+          <input
+            type="button"
+            value="="
+            onclick="cal.display.value =eval(cal.display.value)"
+          />
+          <br /><br />
+          <input
+            type="button"
+            value="DELETE"
+            onclick="cal.display.value=''"
+            id="del"
+          />
+
+          <input type="button" value=" √ " onclick="sq()" />
+
+          <input type="button" value="." onclick="cal.display.value+='.'" />
+        </form>
+      </div>
+
+      <script>
+        // calculator javascript
+        function sq() {
+          cal.display.value = Math.sqrt(cal.display.value);
+        }
+      </script>
+    </div>
+
+    <script>
+      function shuffleArray(array) {
+        for (let i = array.length - 1; i > 0; i--) {
+          const j = Math.floor(Math.random() * (i + 1));
+          [array[i], array[j]] = [array[j], array[i]];
+        }
+      }
+
+      const questions = [
+        {
+          question: "What is 2 + 2?",
+          options: ["4", "5", "6"],
+          correctAnswer: "4",
+        },
+        {
+          question: "What is 3 x 7?",
+          options: ["15", "21", "28"],
+          correctAnswer: "21",
+        },
+        {
+          question: "What is 2 + 3?",
+          options: ["4", "5", "6"],
+          correctAnswer: "5",
+        },
+        {
+          question: "What is 3 x 8?",
+          options: ["15", "24", "28"],
+          correctAnswer: "24",
+        },
+        {
+          question: "What is 2 + 10?",
+          options: ["4", "12", "6"],
+          correctAnswer: "12",
+        },
+        {
+          question: "What is 10 x 7?",
+          options: ["15", "70", "28"],
+          correctAnswer: "70",
+        },
+        {
+          question: "What is 12 + 12?",
+          options: ["24", "5", "6"],
+          correctAnswer: "24",
+        },
+        {
+          question: "What is 13 x 2?",
+          options: ["15", "21", "26"],
+          correctAnswer: "26",
+        },
+        {
+          question: "What is 2 + 22?",
+          options: ["4", "5", "24"],
+          correctAnswer: "24",
+        },
+        {
+          question: "What is 3 x 7?",
+          options: ["15", "21", "28"],
+          correctAnswer: "21",
+        },
+        {
+          question: "What is 20 + 20?",
+          options: ["40", "5", "6"],
+          correctAnswer: "40",
+        },
+        {
+          question: "What is 2 x 7?",
+          options: ["15", "14", "28"],
+          correctAnswer: "14",
+        },
+        {
+          question: "What is 8 + 2?",
+          options: ["4", "5", "10"],
+          correctAnswer: "10",
+        },
+        {
+          question: "What is 3 x 5?",
+          options: ["15", "15", "28"],
+          correctAnswer: "15",
+        },
+      ];
+      shuffleArray(questions); // Shuffle the questions
+      const selectedQuestions = questions.slice(0, 10); // Select 10 random questions
+
+      const questionsList = document.getElementById("questionsList");
+      selectedQuestions.forEach((q, index) => {
+        const li = document.createElement("li");
+        li.innerHTML = `
+                  <h3>${index + 1}. ${q.question}</h3>
+                  <input type="radio" name="q${index}" value="${
+          q.options[0]
+        }">${q.options[0]}<br>
+                  <input type="radio" name="q${index}" value="${
+          q.options[1]
+        }">${q.options[1]}<br>
+                  <input type="radio" name="q${index}" value="${
+          q.options[2]
+        }">${q.options[2]}<br>
+              `;
+        questionsList.appendChild(li);
+      });
+
+      document
+        .getElementById("quizForm")
+        .addEventListener("submit", function (e) {
+          e.preventDefault();
+          let score = 0;
+          for (let i = 0; i < 10; i++) {
+            const selectedAnswer = document.querySelector(
+              `input[name="q${i}"]:checked`
+            );
+            if (selectedAnswer) {
+              const selectedQuestionIndex = parseInt(
+                selectedAnswer.name.slice(1)
+              );
+              const selectedQuestion = selectedQuestions[selectedQuestionIndex];
+              if (selectedAnswer.value === selectedQuestion.correctAnswer) {
+                score++;
+              }
+            }
+          }
+          sessionStorage.setItem("score", score);
+          window.location.href = "result.html";
+        });
+
+      function calculate() {
+        const num1 = parseFloat(document.getElementById("num1").value);
+        const num2 = parseFloat(document.getElementById("num2").value);
+        const operator = document.getElementById("operator").value;
+        let result;
+
+        switch (operator) {
+          case "+":
+            result = num1 + num2;
+            break;
+          case "-":
+            result = num1 - num2;
+            break;
+          case "*":
+            result = num1 * num2;
+            break;
+          case "/":
+            result = num1 / num2;
+            break;
+          default:
+            result = "Invalid operator";
+        }
+
+        document.getElementById("result").innerText = `Result: ${result}`;
+      }
+    </script>
+    </div>
+
+
+  
+  </body>
+</html>
