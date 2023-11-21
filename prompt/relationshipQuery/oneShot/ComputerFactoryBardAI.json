@@ -1,0 +1,79 @@
+{
+    "package": [
+      "DesignPatterns.CreationalPatterns.FactoryPattern"
+    ],
+    "imports": [],
+    "info": [
+      {
+        "class": "ComputerFactory",
+        "methods": [
+          {
+            "name": "getComputer",
+            "arguments": [
+              {
+                "type": "String",
+                "name": "type"
+              },
+              {
+                "type": "String",
+                "name": "ram"
+              },
+              {
+                "type": "String",
+                "name": "hdd"
+              },
+              {
+                "type": "String",
+                "name": "cpu"
+              }
+            ],
+            "calls": [
+              {
+                "method": "equalsIgnoreCase",
+                "arguments": [
+                  {
+                    "type": "String",
+                    "value": "PC"
+                  },
+                  {
+                    "type": "String",
+                    "value": "type"
+                  }
+                ]
+              },
+              {
+                "method": "equalsIgnoreCase",
+                "arguments": [
+                  {
+                    "type": "String",
+                    "value": "Server"
+                  },
+                  {
+                    "type": "String",
+                    "value": "type"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "relationships": [
+      {
+        "class": "ComputerFactory",
+        "relationship_type": "Realization",
+        "with": "Computer"
+      },
+      {
+        "class": "ComputerFactory",
+        "relationship_type": "Association",
+        "with": "PC"
+      },
+      {
+        "class": "ComputerFactory",
+        "relationship_type": "Association",
+        "with": "Server"
+      }
+    ]
+  }

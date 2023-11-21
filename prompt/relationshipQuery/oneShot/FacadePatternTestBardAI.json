@@ -1,0 +1,79 @@
+{
+    "package": [
+      "DesignPatterns.StructuralPatterns.FacadePattern"
+    ],
+    "imports": [
+      "java.sql.Connection"
+    ],
+    "info": [
+      {
+        "class": "FacadePatternTest",
+        "methods": [
+          {
+            "name": "main",
+            "arguments": [
+              {
+                "type": "String",
+                "name": "args"
+              }
+            ],
+            "calls": [
+              {
+                "method": "getMySqlDBConnection"
+              },
+              {
+                "method": "generateMySqlHTMLReport"
+              },
+              {
+                "method": "getOracleDBConnection"
+              },
+              {
+                "method": "generateOraclePDFReport"
+              },
+              {
+                "method": "generateReport",
+                "arguments": [
+                  {
+                    "type": "DBTypes",
+                    "value": "MYSQL"
+                  },
+                  {
+                    "type": "ReportTypes",
+                    "value": "HTML"
+                  },
+                  {
+                    "type": "String",
+                    "value": "customers"
+                  }
+                ]
+              },
+              {
+                "method": "generateReport",
+                "arguments": [
+                  {
+                    "type": "DBTypes",
+                    "value": "ORACLE"
+                  },
+                  {
+                    "type": "ReportTypes",
+                    "value": "PDF"
+                  },
+                  {
+                    "type": "String",
+                    "value": "orders"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "relationships": [
+      {
+        "class": "FacadePatternTest",
+        "relationship_type": "Association",
+        "with": "HelperFacade"
+      }
+    ]
+  }

@@ -1,0 +1,44 @@
+{
+    "package": [
+        "DesignPatterns.StructuralPatterns.FacadePattern"
+    ],
+    "imports": [
+        "java.sql.Connection"
+    ],
+    "info": [
+        {
+            "class": "FacadePatternTest",
+            "methods": [
+                {
+                    "name": "main",
+                    "arguments": [
+                        {
+                            "type": "String",
+                            "name": "args"
+                        }
+                    ],
+                    "calls": [
+                        "getMySqlDBConnection",
+                        "generateMySqlHTMLReport",
+                        "getOracleDBConnection",
+                        "generateOraclePDFReport",
+                        "generateReport",
+                        "generateReport"
+                    ]
+                }
+            ]
+        }
+    ],
+    "relationships": [
+        {
+            "class": "FacadePatternTest",
+            "relationship_type": "Association",
+            "with": "MySqlHelper"
+        },
+        {
+            "class": "FacadePatternTest",
+            "relationship_type": "Association",
+            "with": "OracleHelper"
+        }
+    ]
+}

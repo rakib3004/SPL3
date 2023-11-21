@@ -1,0 +1,50 @@
+{
+    "package": [
+        "DesignPatterns.CreationalPatterns.FactoryPattern"
+    ],
+    "imports": [],
+    "info": [
+        {
+            "class": "ComputerFactory",
+            "methods": [
+                {
+                    "name": "getComputer",
+                    "arguments": [
+                        {
+                            "type": "String",
+                            "name": "type"
+                        },
+                        {
+                            "type": "String",
+                            "name": "ram"
+                        },
+                        {
+                            "type": "String",
+                            "name": "hdd"
+                        },
+                        {
+                            "type": "String",
+                            "name": "cpu"
+                        }
+                    ],
+                    "calls": [
+                        "equalsIgnoreCase",
+                        "equalsIgnoreCase"
+                    ]
+                }
+            ]
+        }
+    ],
+    "relationships": [
+        {
+            "class": "ComputerFactory",
+            "relationship_type": "Generalization",
+            "with": "PC"
+        },
+        {
+            "class": "ComputerFactory",
+            "relationship_type": "Generalization",
+            "with": "Server"
+        }
+    ]
+}
