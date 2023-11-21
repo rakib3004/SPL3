@@ -1,0 +1,226 @@
+{
+    "package": [
+        "src.LibraryManagement"
+    ],
+    "imports": [
+        "javax.swing.*"
+    ],
+    "info": [
+        {
+            "class": "MemberDatabase",
+            "methods": [
+                {
+                    "name": "memberShip",
+                    "arguments": [],
+                    "calls": []
+                },
+                {
+                    "name": "showRegisterMember",
+                    "arguments": [],
+                    "calls": [
+                        "show_RegMember"
+                    ]
+                },
+                {
+                    "name": "show_RegMember",
+                    "arguments": [
+                        {
+                            "type": "RegisterMember",
+                            "name": "registerMembers_array"
+                        }
+                    ],
+                    "calls": [
+                        "getAccountNumber"
+                    ]
+                }
+            ]
+        }
+    ],
+    "relationships": [
+        {
+            "class": "MemberDatabase",
+            "relationship_type": "Association",
+            "with": "GeneralMember"
+        },
+        {
+            "class": "MemberDatabase",
+            "relationship_type": "Association",
+            "with": "GeneralMember"
+        },
+        {
+            "class": "MemberDatabase",
+            "relationship_type": "Association",
+            "with": "GeneralMember"
+        },
+        {
+            "class": "MemberDatabase",
+            "relationship_type": "Association",
+            "with": "GeneralMember"
+        },
+        {
+            "class": "MemberDatabase",
+            "relationship_type": "Association",
+            "with": "GeneralMember"
+        },
+        {
+            "class": "MemberDatabase",
+            "relationship_type": "Association",
+            "with": "GeneralMember"
+        },
+        {
+            "class": "MemberDatabase",
+            "relationship_type": "Association",
+            "with": "GeneralMember"
+        },
+        {
+            "class": "MemberDatabase",
+            "relationship_type": "Association",
+            "with": "GeneralMember"
+        },
+        {
+            "class": "MemberDatabase",
+            "relationship_type": "Association",
+            "with": "GeneralMember"
+        },
+        {
+            "class": "MemberDatabase",
+            "relationship_type": "Association",
+            "with": "GeneralMember"
+        },
+        {
+            "class": "MemberDatabase",
+            "relationship_type": "Association",
+            "with": "GeneralMember"
+        },
+        {
+            "class": "MemberDatabase",
+            "relationship_type": "Association",
+            "with": "GeneralMember"
+        },
+        {
+            "class": "MemberDatabase",
+            "relationship_type": "Association",
+            "with": "RegisterMember"
+        },
+        {
+            "class": "MemberDatabase",
+            "relationship_type": "Association",
+            "with": "RegisterMember"
+        },
+        {
+            "class": "MemberDatabase",
+            "relationship_type": "Association",
+            "with": "RegisterMember"
+        },
+        {
+            "class": "MemberDatabase",
+            "relationship_type": "Association",
+            "with": "RegisterMember"
+        },
+        {
+            "class": "MemberDatabase",
+            "relationship_type": "Association",
+            "with": "RegisterMember"
+        },
+        {
+            "class": "MemberDatabase",
+            "relationship_type": "Association",
+            "with": "RegisterMember"
+        },
+        {
+            "class": "MemberDatabase",
+            "relationship_type": "Association",
+            "with": "RegisterMember"
+        },
+        {
+            "class": "MemberDatabase",
+            "relationship_type": "Association",
+            "with": "RegisterMember"
+        },
+        {
+            "class": "MemberDatabase",
+            "relationship_type": "Association",
+            "with": "RegisterMember"
+        },
+        {
+            "class": "MemberDatabase",
+            "relationship_type": "Association",
+            "with": "RegisterMember"
+        },
+        {
+            "class": "MemberDatabase",
+            "relationship_type": "Association",
+            "with": "RegisterMember"
+        },
+        {
+            "class": "MemberDatabase",
+            "relationship_type": "Association",
+            "with": "RegisterMember"
+        },
+        {
+            "class": "MemberDatabase",
+            "relationship_type": "Association",
+            "with": "RegisterMember"
+        },
+        {
+            "class": "MemberDatabase",
+            "relationship_type": "Association",
+            "with": "RegisterMember"
+        },
+        {
+            "class": "MemberDatabase",
+            "relationship_type": "Association",
+            "with": "RegisterMember"
+        },
+        {
+            "class": "MemberDatabase",
+            "relationship_type": "Association",
+            "with": "RegisterMember"
+        },
+        {
+            "class": "MemberDatabase",
+            "relationship_type": "Association",
+            "with": "RegisterMember"
+        },
+        {
+            "class": "MemberDatabase",
+            "relationship_type": "Association",
+            "with": "RegisterMember"
+        },
+        {
+            "class": "MemberDatabase",
+            "relationship_type": "Association",
+            "with": "RegisterMember"
+        },
+        {
+            "class": "MemberDatabase",
+            "relationship_type": "Association",
+            "with": "RegisterMember"
+        },
+        {
+            "class": "MemberDatabase",
+            "relationship_type": "Association",
+            "with": "ExecutiveMember"
+        },
+        {
+            "class": "MemberDatabase",
+            "relationship_type": "Association",
+            "with": "ExecutiveMember"
+        },
+        {
+            "class": "MemberDatabase",
+            "relationship_type": "Association",
+            "with": "ExecutiveMember"
+        },
+        {
+            "class": "MemberDatabase",
+            "relationship_type": "Association",
+            "with": "ExecutiveMember"
+        },
+        {
+            "class": "MemberDatabase",
+            "relationship_type": "Association",
+            "with": "ExecutiveMember"
+        }
+    ]
+}

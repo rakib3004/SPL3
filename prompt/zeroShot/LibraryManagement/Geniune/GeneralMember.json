@@ -1,42 +1,34 @@
 {
     "package": [
-        "DesignPatterns.CreationalPatterns.FactoryPattern"
+        "src.LibraryManagement"
     ],
     "imports": [],
     "info": [
         {
-            "class": "Server",
+            "class": "GeneralMember",
             "methods": [
                 {
-                    "name": "Server",
+                    "name": "GeneralMember",
                     "arguments": [
                         {
                             "type": "String",
-                            "name": "ram"
+                            "name": "name"
                         },
                         {
                             "type": "String",
-                            "name": "hdd"
+                            "name": "type"
                         },
                         {
                             "type": "String",
-                            "name": "cpu"
+                            "name": "assignDay"
                         }
                     ],
-                    "calls": []
+                    "calls": [
+                        "super"
+                    ]
                 },
                 {
-                    "name": "getRAM",
-                    "arguments": [],
-                    "calls": []
-                },
-                {
-                    "name": "getHDD",
-                    "arguments": [],
-                    "calls": []
-                },
-                {
-                    "name": "getCPU",
+                    "name": "getAssignDay",
                     "arguments": [],
                     "calls": []
                 }
@@ -45,9 +37,9 @@
     ],
     "relationships": [
         {
-            "class": "Server",
+            "class": "GeneralMember",
             "relationship_type": "Generalization",
-            "with": "Computer"
+            "with": "LibraryMember"
         }
     ]
 }

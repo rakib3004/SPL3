@@ -1,0 +1,27 @@
+{
+    "package": [
+        "DesignPatterns.CreationalPatterns.FactoryPattern"
+    ],
+    "imports": [],
+    "info": [
+        {
+            "class": "TestFactory",
+            "methods": [
+                {
+                    "name": "main",
+                    "arguments": [
+                        {
+                            "type": "String",
+                            "name": "args"
+                        }
+                    ],
+                    "calls": [
+                        "getComputer",
+                        "getComputer"
+                    ]
+                }
+            ]
+        }
+    ],
+    "relationships": []
+}

@@ -1,53 +1,56 @@
 {
     "package": [
-        "DesignPatterns.CreationalPatterns.FactoryPattern"
+        "src.LibraryManagement"
     ],
     "imports": [],
     "info": [
         {
-            "class": "Server",
+            "class": "Author",
             "methods": [
                 {
-                    "name": "Server",
+                    "name": "Author",
                     "arguments": [
                         {
                             "type": "String",
-                            "name": "ram"
+                            "name": "name"
                         },
                         {
                             "type": "String",
-                            "name": "hdd"
+                            "name": "email"
                         },
                         {
-                            "type": "String",
-                            "name": "cpu"
+                            "type": "char",
+                            "name": "gender"
                         }
                     ],
                     "calls": []
                 },
                 {
-                    "name": "getRAM",
+                    "name": "getName",
                     "arguments": [],
                     "calls": []
                 },
                 {
-                    "name": "getHDD",
+                    "name": "getEmail",
                     "arguments": [],
                     "calls": []
                 },
                 {
-                    "name": "getCPU",
+                    "name": "getGender",
                     "arguments": [],
                     "calls": []
+                },
+                {
+                    "name": "toString",
+                    "arguments": [],
+                    "calls": [
+                        "getName",
+                        "getEmail",
+                        "getGender"
+                    ]
                 }
             ]
         }
     ],
-    "relationships": [
-        {
-            "class": "Server",
-            "relationship_type": "Generalization",
-            "with": "Computer"
-        }
-    ]
+    "relationships": []
 }

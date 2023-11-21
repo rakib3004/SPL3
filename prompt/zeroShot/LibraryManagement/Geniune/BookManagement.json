@@ -1,0 +1,90 @@
+{
+    "package": [
+        "src.LibraryManagement"
+    ],
+    "imports": [],
+    "info": [
+        {
+            "class": "BookManagement",
+            "methods": [
+                {
+                    "name": "seminar_library",
+                    "arguments": [],
+                    "calls": []
+                }
+            ]
+        }
+    ],
+    "relationships": [
+        {
+            "class": "BookManagement",
+            "relationship_type": "Association",
+            "with": "Author"
+        },
+        {
+            "class": "BookManagement",
+            "relationship_type": "Association",
+            "with": "Author"
+        },
+        {
+            "class": "BookManagement",
+            "relationship_type": "Association",
+            "with": "Author"
+        },
+        {
+            "class": "BookManagement",
+            "relationship_type": "Association",
+            "with": "Author"
+        },
+        {
+            "class": "BookManagement",
+            "relationship_type": "Association",
+            "with": "Author"
+        },
+        {
+            "class": "BookManagement",
+            "relationship_type": "Association",
+            "with": "Author"
+        },
+        {
+            "class": "BookManagement",
+            "relationship_type": "Association",
+            "with": "Author"
+        },
+        {
+            "class": "BookManagement",
+            "relationship_type": "Association",
+            "with": "Book"
+        },
+        {
+            "class": "BookManagement",
+            "relationship_type": "Association",
+            "with": "Book"
+        },
+        {
+            "class": "BookManagement",
+            "relationship_type": "Association",
+            "with": "Book"
+        },
+        {
+            "class": "BookManagement",
+            "relationship_type": "Association",
+            "with": "Book"
+        },
+        {
+            "class": "BookManagement",
+            "relationship_type": "Association",
+            "with": "Book"
+        },
+        {
+            "class": "BookManagement",
+            "relationship_type": "Association",
+            "with": "Book"
+        },
+        {
+            "class": "BookManagement",
+            "relationship_type": "Association",
+            "with": "Book"
+        }
+    ]
+}

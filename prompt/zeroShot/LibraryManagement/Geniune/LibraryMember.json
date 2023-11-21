@@ -1,0 +1,38 @@
+{
+    "package": [
+        "src.LibraryManagement"
+    ],
+    "imports": [],
+    "info": [
+        {
+            "class": "LibraryMember",
+            "methods": [
+                {
+                    "name": "LibraryMember",
+                    "arguments": [
+                        {
+                            "type": "String",
+                            "name": "name"
+                        },
+                        {
+                            "type": "String",
+                            "name": "type"
+                        }
+                    ],
+                    "calls": []
+                },
+                {
+                    "name": "getName",
+                    "arguments": [],
+                    "calls": []
+                },
+                {
+                    "name": "getType",
+                    "arguments": [],
+                    "calls": []
+                }
+            ]
+        }
+    ],
+    "relationships": []
+}

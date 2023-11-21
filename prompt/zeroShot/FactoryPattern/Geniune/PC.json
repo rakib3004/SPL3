@@ -1,0 +1,53 @@
+{
+    "package": [
+        "DesignPatterns.CreationalPatterns.FactoryPattern"
+    ],
+    "imports": [],
+    "info": [
+        {
+            "class": "PC",
+            "methods": [
+                {
+                    "name": "PC",
+                    "arguments": [
+                        {
+                            "type": "String",
+                            "name": "ram"
+                        },
+                        {
+                            "type": "String",
+                            "name": "hdd"
+                        },
+                        {
+                            "type": "String",
+                            "name": "cpu"
+                        }
+                    ],
+                    "calls": []
+                },
+                {
+                    "name": "getRAM",
+                    "arguments": [],
+                    "calls": []
+                },
+                {
+                    "name": "getHDD",
+                    "arguments": [],
+                    "calls": []
+                },
+                {
+                    "name": "getCPU",
+                    "arguments": [],
+                    "calls": []
+                }
+            ]
+        }
+    ],
+    "relationships": [
+        {
+            "class": "PC",
+            "relationship_type": "Generalization",
+            "with": "Computer"
+        }
+    ]
+}

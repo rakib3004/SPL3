@@ -1,0 +1,55 @@
+{
+    "package": [
+        "src.LibraryManagement"
+    ],
+    "imports": [
+        "stati"
+    ],
+    "info": [
+        {
+            "class": "Main",
+            "methods": [
+                {
+                    "name": "main",
+                    "arguments": [
+                        {
+                            "type": "String",
+                            "name": "args"
+                        }
+                    ],
+                    "calls": [
+                        "memberShip",
+                        "seminar_library",
+                        "librarian",
+                        "setVisible",
+                        "setDefaultCloseOperation",
+                        "setTitle",
+                        "setBounds"
+                    ]
+                }
+            ]
+        }
+    ],
+    "relationships": [
+        {
+            "class": "Main",
+            "relationship_type": "Association",
+            "with": "Library"
+        },
+        {
+            "class": "Main",
+            "relationship_type": "Association",
+            "with": "BookManagement"
+        },
+        {
+            "class": "Main",
+            "relationship_type": "Association",
+            "with": "MemberDatabase"
+        },
+        {
+            "class": "Main",
+            "relationship_type": "Association",
+            "with": "Library"
+        }
+    ]
+}

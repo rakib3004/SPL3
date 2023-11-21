@@ -1,42 +1,38 @@
 {
     "package": [
-        "DesignPatterns.CreationalPatterns.FactoryPattern"
+        "src.LibraryManagement"
     ],
     "imports": [],
     "info": [
         {
-            "class": "Server",
+            "class": "ExecutiveMember",
             "methods": [
                 {
-                    "name": "Server",
+                    "name": "ExecutiveMember",
                     "arguments": [
                         {
                             "type": "String",
-                            "name": "ram"
+                            "name": "name"
                         },
                         {
                             "type": "String",
-                            "name": "hdd"
+                            "name": "type"
                         },
                         {
                             "type": "String",
-                            "name": "cpu"
+                            "name": "accountNumber"
+                        },
+                        {
+                            "type": "String",
+                            "name": "title"
                         }
                     ],
-                    "calls": []
+                    "calls": [
+                        "super"
+                    ]
                 },
                 {
-                    "name": "getRAM",
-                    "arguments": [],
-                    "calls": []
-                },
-                {
-                    "name": "getHDD",
-                    "arguments": [],
-                    "calls": []
-                },
-                {
-                    "name": "getCPU",
+                    "name": "getTitle",
                     "arguments": [],
                     "calls": []
                 }
@@ -45,9 +41,9 @@
     ],
     "relationships": [
         {
-            "class": "Server",
+            "class": "ExecutiveMember",
             "relationship_type": "Generalization",
-            "with": "Computer"
+            "with": "RegisterMember"
         }
     ]
 }

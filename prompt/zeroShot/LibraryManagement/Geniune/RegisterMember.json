@@ -1,0 +1,37 @@
+{
+    "package": [
+        "src.LibraryManagement"
+    ],
+    "imports": [],
+    "info": [
+        {
+            "class": "RegisterMember",
+            "methods": [
+                {
+                    "name": "RegisterMember",
+                    "arguments": [
+                        {
+                            "type": "String",
+                            "name": "name"
+                        },
+                        {
+                            "type": "String",
+                            "name": "type"
+                        },
+                        {
+                            "type": "String",
+                            "name": "accountNumber"
+                        }
+                    ],
+                    "calls": []
+                },
+                {
+                    "name": "getAccountNumber",
+                    "arguments": [],
+                    "calls": []
+                }
+            ]
+        }
+    ],
+    "relationships": []
+}

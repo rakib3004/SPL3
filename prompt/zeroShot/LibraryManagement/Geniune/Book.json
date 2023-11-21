@@ -1,0 +1,104 @@
+{
+    "package": [
+        "src.LibraryManagement"
+    ],
+    "imports": [],
+    "info": [
+        {
+            "class": "Book",
+            "methods": [
+                {
+                    "name": "Book",
+                    "arguments": [
+                        {
+                            "type": "String",
+                            "name": "name"
+                        },
+                        {
+                            "type": "Author",
+                            "name": "author"
+                        },
+                        {
+                            "type": "double",
+                            "name": "price"
+                        }
+                    ],
+                    "calls": []
+                },
+                {
+                    "name": "Book",
+                    "arguments": [
+                        {
+                            "type": "String",
+                            "name": "name"
+                        },
+                        {
+                            "type": "Author",
+                            "name": "author"
+                        },
+                        {
+                            "type": "double",
+                            "name": "price"
+                        },
+                        {
+                            "type": "int",
+                            "name": "qty"
+                        }
+                    ],
+                    "calls": []
+                },
+                {
+                    "name": "getName",
+                    "arguments": [],
+                    "calls": []
+                },
+                {
+                    "name": "getAuthor",
+                    "arguments": [],
+                    "calls": []
+                },
+                {
+                    "name": "getPrice",
+                    "arguments": [],
+                    "calls": []
+                },
+                {
+                    "name": "setPrice",
+                    "arguments": [
+                        {
+                            "type": "double",
+                            "name": "price"
+                        }
+                    ],
+                    "calls": []
+                },
+                {
+                    "name": "getQty",
+                    "arguments": [],
+                    "calls": []
+                },
+                {
+                    "name": "setQty",
+                    "arguments": [
+                        {
+                            "type": "int",
+                            "name": "qty"
+                        }
+                    ],
+                    "calls": []
+                },
+                {
+                    "name": "toString",
+                    "arguments": [],
+                    "calls": [
+                        "getName",
+                        "getAuthor",
+                        "getPrice",
+                        "getQty"
+                    ]
+                }
+            ]
+        }
+    ],
+    "relationships": []
+}

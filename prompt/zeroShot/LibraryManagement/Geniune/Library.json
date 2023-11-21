@@ -1,0 +1,298 @@
+{
+    "package": [
+        "src.LibraryManagement"
+    ],
+    "imports": [
+        "javax.swing.*"
+    ],
+    "info": [
+        {
+            "class": "Library",
+            "methods": [
+                {
+                    "name": "seminar_library",
+                    "arguments": [],
+                    "calls": []
+                },
+                {
+                    "name": "librarian",
+                    "arguments": [],
+                    "calls": [
+                        "showInputDialog",
+                        "equals",
+                        "equals",
+                        "equals",
+                        "equals",
+                        "equals",
+                        "equals",
+                        "equals",
+                        "librarian",
+                        "exit",
+                        "showRegisterMember",
+                        "optimise_books",
+                        "increase_books",
+                        "input_books",
+                        "search",
+                        "show_book",
+                        "librarian"
+                    ]
+                },
+                {
+                    "name": "input_books",
+                    "arguments": [],
+                    "calls": [
+                        "showInputDialog",
+                        "findNewBook",
+                        "show_author",
+                        "showInputDialog",
+                        "parseDouble",
+                        "showInputDialog",
+                        "parseInt",
+                        "showMessageDialog",
+                        "librarian"
+                    ]
+                },
+                {
+                    "name": "increase_books",
+                    "arguments": [],
+                    "calls": [
+                        "showInputDialog",
+                        "findBook",
+                        "getQty",
+                        "showInputDialog",
+                        "parseInt",
+                        "setQty",
+                        "showMessageDialog"
+                    ]
+                },
+                {
+                    "name": "optimise_books",
+                    "arguments": [],
+                    "calls": [
+                        "showMessageDialog",
+                        "librarian"
+                    ]
+                },
+                {
+                    "name": "show_book",
+                    "arguments": [],
+                    "calls": [
+                        "librarian",
+                        "showMessageDialog"
+                    ]
+                },
+                {
+                    "name": "show_book2",
+                    "arguments": [],
+                    "calls": []
+                },
+                {
+                    "name": "show_author",
+                    "arguments": [
+                        {
+                            "type": "Author",
+                            "name": "authors_array"
+                        }
+                    ],
+                    "calls": [
+                        "getName",
+                        "showInputDialog",
+                        "parseInt"
+                    ]
+                },
+                {
+                    "name": "findBook",
+                    "arguments": [
+                        {
+                            "type": "String",
+                            "name": "desired_name"
+                        },
+                        {
+                            "type": "Book",
+                            "name": "books_array"
+                        }
+                    ],
+                    "calls": [
+                        "getName",
+                        "equalsIgnoreCase",
+                        "search"
+                    ]
+                },
+                {
+                    "name": "findAuthor",
+                    "arguments": [
+                        {
+                            "type": "String",
+                            "name": "desired_name"
+                        },
+                        {
+                            "type": "Author",
+                            "name": "authors_array"
+                        }
+                    ],
+                    "calls": [
+                        "getName",
+                        "equalsIgnoreCase",
+                        "search"
+                    ]
+                },
+                {
+                    "name": "findNewBook",
+                    "arguments": [
+                        {
+                            "type": "String",
+                            "name": "desired_name"
+                        },
+                        {
+                            "type": "Book",
+                            "name": "books_array"
+                        }
+                    ],
+                    "calls": [
+                        "getName",
+                        "equalsIgnoreCase"
+                    ]
+                },
+                {
+                    "name": "search",
+                    "arguments": [],
+                    "calls": [
+                        "showInputDialog",
+                        "equals",
+                        "equals",
+                        "equals",
+                        "search",
+                        "exit",
+                        "author_search",
+                        "book_search",
+                        "search"
+                    ]
+                },
+                {
+                    "name": "book_search",
+                    "arguments": [],
+                    "calls": [
+                        "showInputDialog",
+                        "findBook",
+                        "showMessageDialog"
+                    ]
+                },
+                {
+                    "name": "author_search",
+                    "arguments": [],
+                    "calls": [
+                        "showInputDialog",
+                        "findAuthor",
+                        "getName",
+                        "author_book",
+                        "showMessageDialog"
+                    ]
+                },
+                {
+                    "name": "author_book",
+                    "arguments": [
+                        {
+                            "type": "String",
+                            "name": "desired_name"
+                        },
+                        {
+                            "type": "Book",
+                            "name": "books_array"
+                        }
+                    ],
+                    "calls": [
+                        "getName",
+                        "equals"
+                    ]
+                }
+            ]
+        }
+    ],
+    "relationships": [
+        {
+            "class": "Library",
+            "relationship_type": "Association",
+            "with": "Author"
+        },
+        {
+            "class": "Library",
+            "relationship_type": "Association",
+            "with": "Author"
+        },
+        {
+            "class": "Library",
+            "relationship_type": "Association",
+            "with": "Author"
+        },
+        {
+            "class": "Library",
+            "relationship_type": "Association",
+            "with": "Author"
+        },
+        {
+            "class": "Library",
+            "relationship_type": "Association",
+            "with": "Author"
+        },
+        {
+            "class": "Library",
+            "relationship_type": "Association",
+            "with": "Author"
+        },
+        {
+            "class": "Library",
+            "relationship_type": "Association",
+            "with": "Author"
+        },
+        {
+            "class": "Library",
+            "relationship_type": "Association",
+            "with": "Book"
+        },
+        {
+            "class": "Library",
+            "relationship_type": "Association",
+            "with": "Book"
+        },
+        {
+            "class": "Library",
+            "relationship_type": "Association",
+            "with": "Book"
+        },
+        {
+            "class": "Library",
+            "relationship_type": "Association",
+            "with": "Book"
+        },
+        {
+            "class": "Library",
+            "relationship_type": "Association",
+            "with": "Book"
+        },
+        {
+            "class": "Library",
+            "relationship_type": "Association",
+            "with": "Book"
+        },
+        {
+            "class": "Library",
+            "relationship_type": "Association",
+            "with": "Book"
+        },
+        {
+            "class": "Library",
+            "relationship_type": "Association",
+            "with": "MemberDatabase"
+        },
+        {
+            "class": "Library",
+            "relationship_type": "Association",
+            "with": "Book"
+        },
+        {
+            "class": "Library",
+            "relationship_type": "Generalization",
+            "with": "JFrame"
+        }
+    ]
+}

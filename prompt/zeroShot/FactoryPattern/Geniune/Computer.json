@@ -1,0 +1,38 @@
+{
+    "package": [
+        "DesignPatterns.CreationalPatterns.FactoryPattern"
+    ],
+    "imports": [],
+    "info": [
+        {
+            "abstract_class": "Computer",
+            "methods": [
+                {
+                    "name": "getRAM",
+                    "arguments": [],
+                    "calls": []
+                },
+                {
+                    "name": "getHDD",
+                    "arguments": [],
+                    "calls": []
+                },
+                {
+                    "name": "getCPU",
+                    "arguments": [],
+                    "calls": []
+                },
+                {
+                    "name": "toString",
+                    "arguments": [],
+                    "calls": [
+                        "getRAM",
+                        "getHDD",
+                        "getCPU"
+                    ]
+                }
+            ]
+        }
+    ],
+    "relationships": []
+}
