@@ -1,0 +1,30 @@
+{
+    "package": [
+        "DesignPatterns.BehavioralPatterns.TemplatePattern"
+    ],
+    "imports": [],
+    "info": [
+        {
+            "class": "GlassHouse",
+            "methods": [
+                {
+                    "name": "buildWalls",
+                    "arguments": [],
+                    "calls": []
+                },
+                {
+                    "name": "buildPillars",
+                    "arguments": [],
+                    "calls": []
+                }
+            ]
+        }
+    ],
+    "relationships": [
+        {
+            "class": "GlassHouse",
+            "relationship_type": "Generalization",
+            "with": "HouseTemplate"
+        }
+    ]
+}

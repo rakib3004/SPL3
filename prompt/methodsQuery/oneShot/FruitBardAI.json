@@ -1,0 +1,58 @@
+{
+    "package": [
+        "DesignPatterns.BehavioralPatterns.VisitorPattern"
+    ],
+    "imports": [],
+    "info": [
+        {
+            "class": "Fruit",
+            "methods": [
+                {
+                    "name": "Fruit",
+                    "arguments": [
+                        {
+                            "type": "String",
+                            "name": "name"
+                        },
+                        {
+                            "type": "int",
+                            "name": "price"
+                        }
+                    ],
+                    "calls": []
+                },
+                {
+                    "name": "getName",
+                    "arguments": [],
+                    "calls": []
+                },
+                {
+                    "name": "getPrice",
+                    "arguments": [],
+                    "calls": []
+                },
+                {
+                    "name": "accept",
+                    "arguments": [
+                        {
+                            "type": "ShoppingCartVisitor",
+                            "name": "visitor"
+                        }
+                    ],
+                    "calls": [
+                        "visit"
+                    ]
+                }
+            ]
+        }
+    ],
+    "relationships": [
+        {
+            "class": "Fruit",
+            "relationship_type": "Realization",
+            "with": "ItemElement"
+        }
+    ]
+}
+
+          

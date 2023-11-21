@@ -1,0 +1,72 @@
+{
+    "package": [
+        "DesignPatterns.BehavioralPatterns.StatePattern"
+    ],
+    "imports": [],
+    "info": [
+        {
+            "class": "TVRemoteBasic",
+            "methods": [
+                {
+                    "name": "setState",
+                    "arguments": [
+                        {
+                            "type": "String",
+                            "name": "state"
+                        }
+                    ],
+                    "calls": []
+                },
+                {
+                    "name": "doAction",
+                    "arguments": [],
+                    "calls": [
+                        {
+                            "method": "setState",
+                            "arguments": [
+                                {
+                                    "type": "String",
+                                    "value": "TVStartState"
+                                }
+                            ]
+                        },
+                        {
+                            "method": "doAction"
+                        },
+                        {
+                            "method": "setState",
+                            "arguments": [
+                                {
+                                    "type": "String",
+                                    "value": "TVStopState"
+                                }
+                            ]
+                        },
+                        {
+                            "method": "doAction"
+                        }
+                    ]
+                },
+                {
+                    "name": "main",
+                    "arguments": [
+                        {
+                            "type": "String",
+                            "name": "args"
+                        }
+                    ],
+                    "calls": [
+                        "doAction"
+                    ]
+                }
+            ]
+        }
+    ],
+    "relationships": [
+        {
+            "class": "TVRemoteBasic",
+            "relationship_type": "Association",
+            "with": "TVRemoteBasic"
+        }
+    ]
+}
