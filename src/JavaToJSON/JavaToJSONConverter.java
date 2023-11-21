@@ -6,10 +6,8 @@ import java.io.*;
 
 public class JavaToJSONConverter {
     public static void main(String[] args) throws IOException {
-        // Set the directory of your Java project
         String projectDirectory = "C:\\Users\\pc\\IdeaProjects\\computer-science\\src\\DesignPatternConcepts\\ObserverPattern\\";
 
-        // Create an ObjectMapper for JSON serialization
         ObjectMapper objectMapper = new ObjectMapper();
 
         // Traverse the project directory
