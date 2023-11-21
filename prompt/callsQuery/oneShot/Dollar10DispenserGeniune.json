@@ -1,0 +1,51 @@
+{
+    "package": [
+        "DesignPatterns.BehavioralPatterns.ChainOfResponsibilityPattern"
+    ],
+    "imports": [],
+    "info": [
+        {
+            "class": "Dollar10Dispenser",
+            "methods": [
+                {
+                    "name": "setNextChain",
+                    "arguments": [
+                        {
+                            "type": "DispenseChain",
+                            "name": "nextChain"
+                        }
+                    ],
+                    "calls": []
+                },
+                {
+                    "name": "dispense",
+                    "arguments": [
+                        {
+                            "type": "Currency",
+                            "name": "cur"
+                        }
+                    ],
+                    "calls": [
+                        "getAmount",
+                        "dispense",
+                        "getAmount",
+                        "getAmount",
+                        "dispense"
+                    ]
+                }
+            ]
+        }
+    ],
+    "relationships": [
+        {
+            "class": "Dollar10Dispenser",
+            "relationship_type": "Association",
+            "with": "Currency"
+        },
+        {
+            "class": "Dollar10Dispenser",
+            "relationship_type": "Realization",
+            "with": "DispenseChain"
+        }
+    ]
+}
