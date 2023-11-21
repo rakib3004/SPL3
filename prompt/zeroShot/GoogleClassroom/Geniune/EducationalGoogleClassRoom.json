@@ -1,0 +1,80 @@
+{
+    "package": [
+        "DesignPatternConcepts.ObserverPattern"
+    ],
+    "imports": [
+        "java.util.ArrayList"
+    ],
+    "info": [
+        {
+            "class": "EducationalGoogleClassRoom",
+            "methods": [
+                {
+                    "name": "EducationalGoogleClassRoom",
+                    "arguments": [
+                        {
+                            "type": "String",
+                            "name": "classroomName"
+                        }
+                    ],
+                    "calls": []
+                },
+                {
+                    "name": "addToClassRoom",
+                    "arguments": [
+                        {
+                            "type": "Students",
+                            "name": "students"
+                        }
+                    ],
+                    "calls": [
+                        "add"
+                    ]
+                },
+                {
+                    "name": "leftFromClassRoom",
+                    "arguments": [
+                        {
+                            "type": "Students",
+                            "name": "students"
+                        }
+                    ],
+                    "calls": [
+                        "remove"
+                    ]
+                },
+                {
+                    "name": "notifyStudents",
+                    "arguments": [
+                        {
+                            "type": "String",
+                            "name": "postName"
+                        }
+                    ],
+                    "calls": [
+                        "update"
+                    ]
+                },
+                {
+                    "name": "postUploaded",
+                    "arguments": [
+                        {
+                            "type": "String",
+                            "name": "postName"
+                        }
+                    ],
+                    "calls": [
+                        "notifyStudents"
+                    ]
+                }
+            ]
+        }
+    ],
+    "relationships": [
+        {
+            "class": "EducationalGoogleClassRoom",
+            "relationship_type": "Realization",
+            "with": "GoogleClassRoom"
+        }
+    ]
+}

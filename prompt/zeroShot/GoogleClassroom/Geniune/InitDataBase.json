@@ -1,0 +1,240 @@
+{
+    "package": [
+        "DesignPatternConcepts.ObserverPattern"
+    ],
+    "imports": [
+        "java.util.ArrayList"
+    ],
+    "info": [
+        {
+            "class": "InitDataBase",
+            "methods": [
+                {
+                    "name": "initGoogleClassRoomStudents",
+                    "arguments": [],
+                    "calls": [
+                        "add",
+                        "add",
+                        "add",
+                        "add",
+                        "add",
+                        "add",
+                        "add",
+                        "add",
+                        "add",
+                        "add",
+                        "add",
+                        "add",
+                        "add",
+                        "add",
+                        "add",
+                        "add",
+                        "add",
+                        "add",
+                        "add",
+                        "add",
+                        "add",
+                        "add",
+                        "add",
+                        "add",
+                        "add",
+                        "add",
+                        "add",
+                        "add",
+                        "add",
+                        "add"
+                    ]
+                },
+                {
+                    "name": "initEducationalClassRoom",
+                    "arguments": [],
+                    "calls": [
+                        "add",
+                        "add",
+                        "add",
+                        "add",
+                        "add",
+                        "add"
+                    ]
+                }
+            ]
+        }
+    ],
+    "relationships": [
+        {
+            "class": "InitDataBase",
+            "relationship_type": "Association",
+            "with": "GoogleClassRoomStudents"
+        },
+        {
+            "class": "InitDataBase",
+            "relationship_type": "Association",
+            "with": "GoogleClassRoomStudents"
+        },
+        {
+            "class": "InitDataBase",
+            "relationship_type": "Association",
+            "with": "GoogleClassRoomStudents"
+        },
+        {
+            "class": "InitDataBase",
+            "relationship_type": "Association",
+            "with": "GoogleClassRoomStudents"
+        },
+        {
+            "class": "InitDataBase",
+            "relationship_type": "Association",
+            "with": "GoogleClassRoomStudents"
+        },
+        {
+            "class": "InitDataBase",
+            "relationship_type": "Association",
+            "with": "GoogleClassRoomStudents"
+        },
+        {
+            "class": "InitDataBase",
+            "relationship_type": "Association",
+            "with": "GoogleClassRoomStudents"
+        },
+        {
+            "class": "InitDataBase",
+            "relationship_type": "Association",
+            "with": "GoogleClassRoomStudents"
+        },
+        {
+            "class": "InitDataBase",
+            "relationship_type": "Association",
+            "with": "GoogleClassRoomStudents"
+        },
+        {
+            "class": "InitDataBase",
+            "relationship_type": "Association",
+            "with": "GoogleClassRoomStudents"
+        },
+        {
+            "class": "InitDataBase",
+            "relationship_type": "Association",
+            "with": "GoogleClassRoomStudents"
+        },
+        {
+            "class": "InitDataBase",
+            "relationship_type": "Association",
+            "with": "GoogleClassRoomStudents"
+        },
+        {
+            "class": "InitDataBase",
+            "relationship_type": "Association",
+            "with": "GoogleClassRoomStudents"
+        },
+        {
+            "class": "InitDataBase",
+            "relationship_type": "Association",
+            "with": "GoogleClassRoomStudents"
+        },
+        {
+            "class": "InitDataBase",
+            "relationship_type": "Association",
+            "with": "GoogleClassRoomStudents"
+        },
+        {
+            "class": "InitDataBase",
+            "relationship_type": "Association",
+            "with": "GoogleClassRoomStudents"
+        },
+        {
+            "class": "InitDataBase",
+            "relationship_type": "Association",
+            "with": "GoogleClassRoomStudents"
+        },
+        {
+            "class": "InitDataBase",
+            "relationship_type": "Association",
+            "with": "GoogleClassRoomStudents"
+        },
+        {
+            "class": "InitDataBase",
+            "relationship_type": "Association",
+            "with": "GoogleClassRoomStudents"
+        },
+        {
+            "class": "InitDataBase",
+            "relationship_type": "Association",
+            "with": "GoogleClassRoomStudents"
+        },
+        {
+            "class": "InitDataBase",
+            "relationship_type": "Association",
+            "with": "GoogleClassRoomStudents"
+        },
+        {
+            "class": "InitDataBase",
+            "relationship_type": "Association",
+            "with": "GoogleClassRoomStudents"
+        },
+        {
+            "class": "InitDataBase",
+            "relationship_type": "Association",
+            "with": "GoogleClassRoomStudents"
+        },
+        {
+            "class": "InitDataBase",
+            "relationship_type": "Association",
+            "with": "GoogleClassRoomStudents"
+        },
+        {
+            "class": "InitDataBase",
+            "relationship_type": "Association",
+            "with": "GoogleClassRoomStudents"
+        },
+        {
+            "class": "InitDataBase",
+            "relationship_type": "Association",
+            "with": "GoogleClassRoomStudents"
+        },
+        {
+            "class": "InitDataBase",
+            "relationship_type": "Association",
+            "with": "GoogleClassRoomStudents"
+        },
+        {
+            "class": "InitDataBase",
+            "relationship_type": "Association",
+            "with": "GoogleClassRoomStudents"
+        },
+        {
+            "class": "InitDataBase",
+            "relationship_type": "Association",
+            "with": "GoogleClassRoomStudents"
+        },
+        {
+            "class": "InitDataBase",
+            "relationship_type": "Association",
+            "with": "GoogleClassRoomStudents"
+        },
+        {
+            "class": "InitDataBase",
+            "relationship_type": "Association",
+            "with": "EducationalGoogleClassRoom"
+        },
+        {
+            "class": "InitDataBase",
+            "relationship_type": "Association",
+            "with": "EducationalGoogleClassRoom"
+        },
+        {
+            "class": "InitDataBase",
+            "relationship_type": "Association",
+            "with": "EducationalGoogleClassRoom"
+        },
+        {
+            "class": "InitDataBase",
+            "relationship_type": "Association",
+            "with": "EducationalGoogleClassRoom"
+        },
+        {
+            "class": "InitDataBase",
+            "relationship_type": "Association",
+            "with": "EducationalGoogleClassRoom"
+        }
+    ]
+}

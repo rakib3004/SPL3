@@ -1,0 +1,59 @@
+{
+    "package": [
+        "DesignPatternConcepts.ObserverPattern"
+    ],
+    "imports": [
+        "java.util.ArrayList"
+    ],
+    "info": [
+        {
+            "class": "GoogleClassStream",
+            "methods": [
+                {
+                    "name": "main",
+                    "arguments": [
+                        {
+                            "type": "String",
+                            "name": "args"
+                        }
+                    ],
+                    "calls": [
+                        "initEducationalClassRoom",
+                        "initGoogleClassRoomStudents",
+                        "random",
+                        "random",
+                        "get",
+                        "get",
+                        "add",
+                        "add",
+                        "add",
+                        "add",
+                        "add",
+                        "add",
+                        "get",
+                        "get",
+                        "random",
+                        "random",
+                        "get",
+                        "get",
+                        "add",
+                        "add",
+                        "add",
+                        "add",
+                        "add",
+                        "add",
+                        "get",
+                        "get"
+                    ]
+                }
+            ]
+        }
+    ],
+    "relationships": [
+        {
+            "class": "GoogleClassStream",
+            "relationship_type": "Association",
+            "with": "InitDataBase"
+        }
+    ]
+}

@@ -1,0 +1,44 @@
+{
+    "package": [
+        "DesignPatternConcepts.ObserverPattern"
+    ],
+    "imports": [],
+    "info": [
+        {
+            "interface": "GoogleClassRoom",
+            "methods": [
+                {
+                    "name": "addToClassRoom",
+                    "arguments": [
+                        {
+                            "type": "Students",
+                            "name": "students"
+                        }
+                    ],
+                    "calls": []
+                },
+                {
+                    "name": "leftFromClassRoom",
+                    "arguments": [
+                        {
+                            "type": "Students",
+                            "name": "students"
+                        }
+                    ],
+                    "calls": []
+                },
+                {
+                    "name": "notifyStudents",
+                    "arguments": [
+                        {
+                            "type": "String",
+                            "name": "message"
+                        }
+                    ],
+                    "calls": []
+                }
+            ]
+        }
+    ],
+    "relationships": []
+}

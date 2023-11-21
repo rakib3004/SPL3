@@ -1,0 +1,71 @@
+{
+    "package": [
+      "DesignPatternConcepts.ObserverPattern"
+    ],
+    "imports": [
+      "java.util.ArrayList"
+    ],
+    "info": [
+      {
+        "class": "GoogleClassRoom",
+        "methods": [
+          {
+            "name": "addToClassRoom",
+            "arguments": [
+              {
+                "type": "Students",
+                "name": "students"
+              }
+            ],
+            "calls": [
+              "add"
+            ]
+          },
+          {
+            "name": "leftFromClassRoom",
+            "arguments": [
+              {
+                "type": "Students",
+                "name": "students"
+              }
+            ],
+            "calls": [
+              "remove"
+            ]
+          },
+          {
+            "name": "notifyStudents",
+            "arguments": [
+              {
+                "type": "String",
+                "name": "postName"
+              }
+            ],
+            "calls": [
+              "update"
+            ]
+          },
+          {
+            "name": "postUploaded",
+            "arguments": [
+              {
+                "type": "String",
+                "name": "postName"
+              }
+            ],
+            "calls": [
+              "notifyStudents"
+            ]
+          }
+        ]
+      }
+    ],
+    "relationships": [
+      {
+        "class": "GoogleClassRoom",
+        "relationship_type": "Realization",
+        "with": "GoogleClassRoomInterface"
+      }
+    ]
+  }
+  

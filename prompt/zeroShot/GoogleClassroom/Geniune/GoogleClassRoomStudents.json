@@ -1,0 +1,44 @@
+{
+    "package": [
+        "DesignPatternConcepts.ObserverPattern"
+    ],
+    "imports": [],
+    "info": [
+        {
+            "class": "GoogleClassRoomStudents",
+            "methods": [
+                {
+                    "name": "GoogleClassRoomStudents",
+                    "arguments": [
+                        {
+                            "type": "String",
+                            "name": "studentName"
+                        }
+                    ],
+                    "calls": []
+                },
+                {
+                    "name": "update",
+                    "arguments": [
+                        {
+                            "type": "String",
+                            "name": "classroomName"
+                        },
+                        {
+                            "type": "String",
+                            "name": "postDetails"
+                        }
+                    ],
+                    "calls": []
+                }
+            ]
+        }
+    ],
+    "relationships": [
+        {
+            "class": "GoogleClassRoomStudents",
+            "relationship_type": "Realization",
+            "with": "Students"
+        }
+    ]
+}

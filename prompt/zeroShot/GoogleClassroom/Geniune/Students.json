@@ -1,0 +1,28 @@
+{
+    "package": [
+        "DesignPatternConcepts.ObserverPattern"
+    ],
+    "imports": [],
+    "info": [
+        {
+            "interface": "Students",
+            "methods": [
+                {
+                    "name": "update",
+                    "arguments": [
+                        {
+                            "type": "String",
+                            "name": "name"
+                        },
+                        {
+                            "type": "String",
+                            "name": "message"
+                        }
+                    ],
+                    "calls": []
+                }
+            ]
+        }
+    ],
+    "relationships": []
+}

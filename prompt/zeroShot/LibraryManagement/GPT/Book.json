@@ -1,1 +1,48 @@
-{} 
+{
+    "package": [
+        "src.LibraryManagement"
+    ],
+    "imports": [
+        "some.import.package"
+    ],
+    "info": [
+        {
+            "class": "Book",
+            "methods": [
+                {
+                    "name": "someBookMethod",
+                    "arguments": [
+                        {
+                            "type": "String",
+                            "name": "arg1"
+                        },
+                        {
+                            "type": "int",
+                            "name": "arg2"
+                        }
+                    ],
+                    "calls": [
+                        "someOtherMethod"
+                    ]
+                },
+                {
+                    "name": "someOtherMethod",
+                    "arguments": [
+                        {
+                            "type": "double",
+                            "name": "arg1"
+                        }
+                    ],
+                    "calls": []
+                }
+            ]
+        }
+    ],
+    "relationships": [
+        {
+            "class": "Book",
+            "relationship_type": "Association",
+            "with": "Author"
+        }
+    ]
+}
