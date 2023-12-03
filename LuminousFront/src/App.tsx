@@ -1,15 +1,11 @@
-import React, { useState } from 'react';
-import reactLogo from './assets/react.svg';
-import viteLogo from './vite.svg'; // Assuming the Vite logo is in the same directory as the TypeScript file
-import './App.css';
 
-function App() {
 
-  return (
-    <div>
-        <h1>Hi</h1>
-    </div>
-  );
-}
+import { Button} from "keep-react";
+import Welcome from "./Welcome";
+interface AppProps {}
+
+const App: React.FC<AppProps> = () => {
+ <Welcome/>
+};
 
 export default App;
