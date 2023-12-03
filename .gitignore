@@ -1,3 +1,4 @@
+node_modules
 ### IntelliJ IDEA ###
 out/
 !**/src/main/**/out/
