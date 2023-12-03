@@ -1,9 +1,0 @@
-interface || abstraction class
-inheritence
-enum
-association
-
-
-methods
-calls
-

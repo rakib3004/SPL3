@@ -1,1 +1,0 @@
-"package DesignPatternConcepts.ObserverPattern;\n\n//Observer\npublic interface Students {\n    public void update(String name, String message);\n}\n"
