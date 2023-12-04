@@ -1,35 +1,28 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import NavBar from "./components/NavBar";
+import { Button } from "keep-react";
 
 function App() {
-  const [count, setCount] = useState(0)
-
+  const goToMenuPage = () =>{
+      
+  }
   return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+    <div>
+      <NavBar />
+      <div className="justify-center">
+        <div className="flex flex-col items-center justify-center">
+          <h1 className="text-3xl text-gray-700 mb-4">
+            Welcome to Rebuilder Toolkit
+          </h1>
+          <img
+            src="../public/welcome-software-system-reconsturciton.gif"
+            alt="Example GIF"
+            className="mb-4"
+          />
+          <Button size="lg" onClick={goToMenuPage}>Get Started</Button>
+        </div>
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+    </div>
+  );
 }
 
-export default App
+export default App;
