@@ -6,15 +6,17 @@ import 'ace-builds/src-noconflict/theme-monokai';
 import 'ace-builds/src-noconflict/mode-json';
 
 const Json = () => {
-    const [jsonData, setJsonData] = useState('');
-    const [jsonOutput, setJsonOutput] = useState('');
+    const [actualJSON, setActualJSON] = useState('');
+    const [gptJSON, setGptJSON] = useState('');
+
   
-    const handleJsonDataChange = (newCode) => {
-      setJsonData(newCode);
-  
-      const jsonResult = convertJavaToJson(newCode);
-      setJsonOutput(jsonResult);
+    const handleActualJSON = (newCode) => {
+        setActualJSON(newCode);
     };
+
+    const handleGptJSON = (newCode) => {
+        setGptJSON(newCode);
+      };
   
     const convertJavaToJson = (jsonData) => {
     
@@ -29,15 +31,15 @@ const Json = () => {
     return (
       <div>
         <div>
-          <h2>Json Output</h2>
+          <h2>Translated Json</h2>
           <AceEditor
             mode="java"
             theme="monokai"
-            onChange={handleJsonDataChange}
-            value={jsonData}
+            onChange={handleActualJSON}
+            value={actualJSON}
             fontSize={14}
             width="100%"
-            height="420px"
+            height="320px"
             showPrintMargin={true}
             showGutter={true}
             highlightActiveLine={true}
@@ -45,10 +47,23 @@ const Json = () => {
           />
         </div>
         <div>
-          <h2>JSON Output</h2>
-          <pre>{jsonOutput}</pre>
+          <h2>GPT Response JSON</h2>
+          <AceEditor
+            mode="java"
+            theme="monokai"
+            onChange={handleGptJSON}
+            value={gptJSON}
+            fontSize={14}
+            width="100%"
+            height="320px"
+            showPrintMargin={true}
+            showGutter={true}
+            highlightActiveLine={true}
+            editorProps={{ $blockScrolling: Infinity }}
+          />
         </div>
-      </div>
+        </div>
+
     );
 }
 
