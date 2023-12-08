@@ -1,27 +1,17 @@
 import NavBar from "./components/NavBar";
-import { Button } from "keep-react";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Welcome from "./pages/Welcome";
+import Editor from "./pages/Editor";
 
 function App() {
-  const goToMenuPage = () =>{
-      
-  }
   return (
-    <div>
+    <BrowserRouter>
       <NavBar />
-      <div className="justify-center">
-        <div className="flex flex-col items-center justify-center">
-          <h1 className="text-3xl text-gray-700 mb-4">
-            Welcome to Rebuilder Toolkit
-          </h1>
-          <img
-            src="../public/welcome-software-system-reconsturciton.gif"
-            alt="Example GIF"
-            className="mb-4"
-          />
-          <Button size="lg" onClick={goToMenuPage}>Get Started</Button>
-        </div>
-      </div>
-    </div>
+      <Routes>
+        <Route exact path="/" element={<Welcome />} />
+        <Route exact path="/editor" element={<Editor />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
