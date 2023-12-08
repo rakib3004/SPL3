@@ -3,23 +3,23 @@ import { useState } from 'react';
 import AceEditor from 'react-ace';
 
 import 'ace-builds/src-noconflict/theme-monokai';
-import 'ace-builds/src-noconflict/mode-java';
+import 'ace-builds/src-noconflict/mode-json';
 
-const Editor = () => {
-    const [javaCode, setJavaCode] = useState('');
+const Json = () => {
+    const [jsonData, setJsonData] = useState('');
     const [jsonOutput, setJsonOutput] = useState('');
   
-    const handleJavaCodeChange = (newCode) => {
-      setJavaCode(newCode);
+    const handleJsonDataChange = (newCode) => {
+      setJsonData(newCode);
   
       const jsonResult = convertJavaToJson(newCode);
       setJsonOutput(jsonResult);
     };
   
-    const convertJavaToJson = (javaCode) => {
+    const convertJavaToJson = (jsonData) => {
     
       try {
-        const jsonObject = JSON.stringify({ javaCode });
+        const jsonObject = JSON.stringify({ jsonData });
         return jsonObject;
       } catch (error) {
         return `Error converting Java to JSON: ${error.message}`;
@@ -29,12 +29,12 @@ const Editor = () => {
     return (
       <div>
         <div>
-          <h2>Java Code Editor</h2>
+          <h2>Json Output</h2>
           <AceEditor
             mode="java"
             theme="monokai"
-            onChange={handleJavaCodeChange}
-            value={javaCode}
+            onChange={handleJsonDataChange}
+            value={jsonData}
             fontSize={14}
             width="100%"
             height="420px"
@@ -52,4 +52,4 @@ const Editor = () => {
     );
 }
 
-export default Editor;
+export default Json;
