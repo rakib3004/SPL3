@@ -10,8 +10,8 @@ function App() {
       <NavBar />
       <Routes>
         <Route exact path="/" element={<Welcome />} />
-        <Route exact path="/editor" element={<Translation />} />
-        <Route exact path="/output" element={<Prompt />} />
+        <Route exact path="/translation" element={<Translation />} />
+        <Route exact path="/prompt" element={<Prompt />} />
 
       </Routes>
     </BrowserRouter>
