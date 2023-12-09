@@ -29,17 +29,17 @@ const Json = () => {
     };
   
     return (
-      <div>
+      <div className='flex flex-column justify-center'>
         <div>
-          <h2>Translated Json</h2>
+          <h2>Actual Json</h2>
           <AceEditor
             mode="java"
             theme="monokai"
             onChange={handleActualJSON}
             value={actualJSON}
             fontSize={14}
-            width="100%"
-            height="320px"
+            width="600px"
+            height="500px"
             showPrintMargin={true}
             showGutter={true}
             highlightActiveLine={true}
@@ -47,15 +47,15 @@ const Json = () => {
           />
         </div>
         <div>
-          <h2>GPT Response JSON</h2>
+          <h2>GPT Generated JSON</h2>
           <AceEditor
             mode="java"
             theme="monokai"
             onChange={handleGptJSON}
             value={gptJSON}
             fontSize={14}
-            width="100%"
-            height="320px"
+            width="600px"
+            height="500px"
             showPrintMargin={true}
             showGutter={true}
             highlightActiveLine={true}

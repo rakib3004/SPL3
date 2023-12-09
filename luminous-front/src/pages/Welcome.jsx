@@ -16,7 +16,7 @@ const Welcome = () => {
             Welcome to Rebuilder Toolkit
           </h1>
           <img
-            src="../public/welcome-software-system-reconsturciton.gif"
+            src="welcome-software-system-reconstruction.gif"
             alt="Example GIF"
             className="mb-4"
           />
