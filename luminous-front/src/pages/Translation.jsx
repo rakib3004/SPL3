@@ -5,7 +5,7 @@ import AceEditor from 'react-ace';
 import 'ace-builds/src-noconflict/theme-monokai';
 import 'ace-builds/src-noconflict/mode-java';
 
-const Editor = () => {
+const Translation = () => {
     const [javaCode, setJavaCode] = useState('');
     const [jsonOutput, setJsonOutput] = useState('');
   
@@ -29,7 +29,7 @@ const Editor = () => {
     return (
       <div>
         <div>
-          <h2>Java Code Editor</h2>
+          <h2>Java Code Translation</h2>
           <AceEditor
             mode="java"
             theme="monokai"
@@ -52,4 +52,4 @@ const Editor = () => {
     );
 }
 
-export default Editor;
+export default Translation;

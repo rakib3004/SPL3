@@ -5,7 +5,7 @@ import AceEditor from 'react-ace';
 import 'ace-builds/src-noconflict/theme-monokai';
 import 'ace-builds/src-noconflict/mode-json';
 
-const Json = () => {
+const Prompt = () => {
     const [actualJSON, setActualJSON] = useState('');
     const [gptJSON, setGptJSON] = useState('');
 
@@ -31,7 +31,7 @@ const Json = () => {
     return (
       <div className='flex flex-column justify-center'>
         <div>
-          <h2>Actual Json</h2>
+          <h2 className='font-bold'>Actual Prompt</h2>
           <AceEditor
             mode="java"
             theme="monokai"
@@ -46,8 +46,9 @@ const Json = () => {
             editorProps={{ $blockScrolling: Infinity }}
           />
         </div>
+        <div style={{ marginTop: '20px' }}/> 
         <div>
-          <h2>GPT Generated JSON</h2>
+          <h2 className='font-bold'>GPT Generated JSON</h2>
           <AceEditor
             mode="java"
             theme="monokai"
@@ -67,4 +68,4 @@ const Json = () => {
     );
 }
 
-export default Json;
+export default Prompt;

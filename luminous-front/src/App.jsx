@@ -1,8 +1,8 @@
 import NavBar from "./components/NavBar";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Welcome from "./pages/Welcome";
-import Editor from "./pages/Editor";
-import Json from "./pages/Json";
+import Translation from "./pages/Translation";
+import Prompt from "./pages/Prompt";
 
 function App() {
   return (
@@ -10,8 +10,8 @@ function App() {
       <NavBar />
       <Routes>
         <Route exact path="/" element={<Welcome />} />
-        <Route exact path="/editor" element={<Editor />} />
-        <Route exact path="/output" element={<Json />} />
+        <Route exact path="/editor" element={<Translation />} />
+        <Route exact path="/output" element={<Prompt />} />
 
       </Routes>
     </BrowserRouter>
