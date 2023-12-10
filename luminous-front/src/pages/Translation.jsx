@@ -2,10 +2,39 @@
 import JavaEditor from '../components/JavaEditor';
 import JsonEditor from '../components/JsonEditor';
 import { Button } from "keep-react";
+import { useState } from "react";
 
 const Translation = () => {
-    // const [jsonOutput, setJsonOutput] = useState('');
+  const javaEditorTitle = "Java Code"
+  const [javaCode, setJavaCode] = useState("");
+  const handleJavaCodeOnChange = (newCode) => {
+    setJavaCode(newCode);
+  };
+
+  const javaEditorProps = {
+    javaEditorTitle: javaEditorTitle,
+    javaCode: javaCode,
+    setJavaCode: setJavaCode,
+    handleJavaCodeOnChange: handleJavaCodeOnChange,
+  };
   
+  
+  const jsonDataTitle = "Json Data"
+  const [jsonData, setJsonData] = useState('');
+  const handleJsonDataOnChange = (newCode) => {
+    setJsonData(newCode);
+  };
+
+  const jsonEditorProps = {
+    jsonDataTitle: jsonDataTitle,
+    jsonData: jsonData,
+    setJsonData: setJsonData,
+    handleJsonDataOnChange: handleJsonDataOnChange,
+  };
+  
+
+  
+
    
     // const convertJavaToJson = (javaCode) => {
     
@@ -31,10 +60,11 @@ const Translation = () => {
     return (
 <div className='flex flex-column justify-center'>
         <div className='mr-10'>
-        <JavaEditor />
-      <ConvertButton/>
+  
+<JavaEditor {...javaEditorProps} />  
+    <ConvertButton/>
         </div>
-        <JsonEditor/>
+        <JsonEditor {...jsonEditorProps}/>
       </div>
     );
 }

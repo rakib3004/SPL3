@@ -1,20 +1,13 @@
-import { useState } from "react";
 import AceEditor from "react-ace";
 import "ace-builds/src-noconflict/theme-monokai";
 import "ace-builds/src-noconflict/mode-java";
 
-const JavaEditor = () => {
-  const title = "Java Code"
-
-  const [javaCode, setJavaCode] = useState("");
-
-  const handleJavaCodeChange = (newCode) => {
-    setJavaCode(newCode);
-  };
+const JavaEditor = ({ javaEditorTitle, javaCode, setJavaCode, handleJavaCodeChange }) => {
+ 
 
   return (
     <div>
-      <h2 className='font-bold'>{title}</h2>
+      <h2 className='font-bold'>{javaEditorTitle}</h2>
       <AceEditor
         mode="java"
         theme="monokai"

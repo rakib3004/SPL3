@@ -27,8 +27,6 @@ function App() {
         <Route exact path="/analytics" element={<Analytics/>} />
         <Route exact path="/about" element={<About/>} />
 
-
-
       </Routes>
     </BrowserRouter>
   );
