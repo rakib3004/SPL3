@@ -3,7 +3,7 @@ import JavaEditor from '../components/JavaEditor';
 import JsonEditor from '../components/JsonEditor';
 import { Button } from "keep-react";
 import { useState } from "react";
-import {convertJavaCodeToJsonData} from '../services/TranslationService'
+import {translateToJson} from '../services/Services'
 
 const Translation = () => {
   const javaEditorTitle = "Java Code"
@@ -34,7 +34,7 @@ const Translation = () => {
   // };
   
     const convertJavaCodeToJsonData = async (javaCode) =>{
-      const jsonResponse = await convertJavaCodeToJsonData(javaCode);
+      const jsonResponse = await translateToJson(javaCode);
       setJsonData(jsonResponse);
     }
 
