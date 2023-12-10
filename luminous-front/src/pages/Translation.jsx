@@ -35,12 +35,14 @@ const Translation = () => {
   
     const convertJavaCodeToJsonData = async (javaCode) =>{
       const jsonResponse = await translateToJson(javaCode);
-      setJsonData(jsonResponse);
+      const translatedJson = JSON.stringify(jsonResponse.data, null, 2)
+      console.log(translatedJson)
+       setJsonData(translatedJson);
     }
 
     const ConvertButton = () =>{
       return (
-        <Button size="lg" onClick={convertJavaCodeToJsonData}>
+        <Button size="lg" onClick={() =>convertJavaCodeToJsonData(javaCode)}>
         Convert
       </Button>
       )
