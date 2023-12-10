@@ -9,6 +9,7 @@ import Reconstruction from "./pages/Reconstruction";
 import Info from "./pages/Info";
 import Analytics from "./pages/Analytics";
 import About from "./pages/About";
+import Menu from "./pages/Menu";
 
 
 
@@ -18,6 +19,7 @@ function App() {
       <NavBar />
       <Routes>
         <Route exact path="/" element={<Welcome />} />
+        <Route exact path="/menu" element={<Menu />} />
         <Route exact path="/translation" element={<Translation />} />
         <Route exact path="/repo-translation" element={<RepoTranslation />} />
         <Route exact path="/datasets" element={<Datasets />} />

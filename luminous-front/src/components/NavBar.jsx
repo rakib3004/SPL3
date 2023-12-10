@@ -19,15 +19,15 @@ const NavBar = () => {
           tag="ul"
           className="lg:flex hidden items-center justify-between gap-8"
         >
-          <Navbar.Link linkName="Home" />
-          <Navbar.Link linkName="Datasets" />
-          <Navbar.Link linkName="About" />
+          <Navbar.Link linkName="Home" href="/" />
+          <Navbar.Link linkName="Datasets" href="https://www.kaggle.com/datasets/mdrakibtrofder/java-code-to-json-translation" />
+          <Navbar.Link linkName="About" href="/about" />
         </Navbar.Container>
         <Navbar.Collapse collapseType="sidebar">
           <Navbar.Container tag="ul" className="flex flex-col gap-5">
-            <Navbar.Link linkName="Home" />
-            <Navbar.Link linkName="Datasets" />
-            <Navbar.Link linkName="About" />
+            <Navbar.Link linkName="Home" href="/" />
+            <Navbar.Link linkName="Datasets" href="https://www.kaggle.com/datasets/mdrakibtrofder/java-code-to-json-translation" />
+            <Navbar.Link linkName="About" href="/about" />
 
           </Navbar.Container>
         </Navbar.Collapse>

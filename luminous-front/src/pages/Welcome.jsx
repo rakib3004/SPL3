@@ -5,7 +5,7 @@ const Welcome = () => {
   const navigateTo = useNavigate();
 
   const goToMenuPage = () => {
-    navigateTo("/translation");
+    navigateTo("/menu");
 
   };
   return (
