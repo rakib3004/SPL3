@@ -2,7 +2,8 @@ import AceEditor from 'react-ace';
 import 'ace-builds/src-noconflict/theme-monokai';
 import 'ace-builds/src-noconflict/mode-json';
 
-const JsonEditor = ({jsonDataTitle, jsonData, setJsonData, handleJsonDataOnChange}) => {
+// eslint-disable-next-line react/prop-types
+const JsonEditor = ({jsonDataTitle, jsonData, handleJsonDataOnChange, readOnlyState}) => {
   
   return (
     <div>
@@ -19,6 +20,7 @@ const JsonEditor = ({jsonDataTitle, jsonData, setJsonData, handleJsonDataOnChang
       showGutter={true}
       highlightActiveLine={true}
       editorProps={{ $blockScrolling: Infinity }}
+      readOnly={readOnlyState}
     />
   </div>
   )

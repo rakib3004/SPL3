@@ -2,7 +2,9 @@ import AceEditor from "react-ace";
 import "ace-builds/src-noconflict/theme-monokai";
 import "ace-builds/src-noconflict/mode-java";
 
-const JavaEditor = ({ javaEditorTitle, javaCode, setJavaCode, handleJavaCodeChange }) => {
+
+// eslint-disable-next-line react/prop-types
+const JavaEditor = ({ javaEditorTitle, javaCode, handleJavaCodeOnChange }) => {
  
 
   return (
@@ -11,7 +13,7 @@ const JavaEditor = ({ javaEditorTitle, javaCode, setJavaCode, handleJavaCodeChan
       <AceEditor
         mode="java"
         theme="monokai"
-        onChange={handleJavaCodeChange}
+        onChange={handleJavaCodeOnChange}
         value={javaCode}
         fontSize={14}
         width="600px"

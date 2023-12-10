@@ -3,50 +3,39 @@ import JavaEditor from '../components/JavaEditor';
 import JsonEditor from '../components/JsonEditor';
 import { Button } from "keep-react";
 import { useState } from "react";
+import {convertJavaCodeToJsonData} from '../services/TranslationService'
 
 const Translation = () => {
   const javaEditorTitle = "Java Code"
   const [javaCode, setJavaCode] = useState("");
-  const handleJavaCodeOnChange = (newCode) => {
-    setJavaCode(newCode);
+  const handleJavaCodeOnChange = (java) => {
+    setJavaCode(java);
   };
 
-  const javaEditorProps = {
-    javaEditorTitle: javaEditorTitle,
-    javaCode: javaCode,
-    setJavaCode: setJavaCode,
-    handleJavaCodeOnChange: handleJavaCodeOnChange,
-  };
+  // const javaEditorProps = {
+  //   javaEditorTitle: javaEditorTitle,
+  //   javaCode: javaCode,
+  //   handleJavaCodeOnChange: handleJavaCodeOnChange,
+  // };
   
   
   const jsonDataTitle = "Json Data"
   const [jsonData, setJsonData] = useState('');
-  const handleJsonDataOnChange = (newCode) => {
-    setJsonData(newCode);
+  const handleJsonDataOnChange = (json) => {
+    setJsonData(json);
   };
+  const readOnlyState = true;
 
-  const jsonEditorProps = {
-    jsonDataTitle: jsonDataTitle,
-    jsonData: jsonData,
-    setJsonData: setJsonData,
-    handleJsonDataOnChange: handleJsonDataOnChange,
-  };
+  // const jsonEditorProps = {
+  //   jsonDataTitle: jsonDataTitle,
+  //   jsonData: jsonData,
+  //   handleJsonDataOnChange: handleJsonDataOnChange,
+  //   readOnlyState: readOnlyState,
+  // };
   
-
-  
-
-   
-    // const convertJavaToJson = (javaCode) => {
-    
-    //   try {
-    //     const jsonObject = JSON.stringify({ javaCode });
-    //     return jsonObject;
-    //   } catch (error) {
-    //     return `Error converting Java to JSON: ${error.message}`;
-    //   }
-    // };
-    const convertJavaCodeToJsonData = () =>{
-
+    const convertJavaCodeToJsonData = async (javaCode) =>{
+      const jsonResponse = await convertJavaCodeToJsonData(javaCode);
+      setJsonData(jsonResponse);
     }
 
     const ConvertButton = () =>{
@@ -61,10 +50,10 @@ const Translation = () => {
 <div className='flex flex-column justify-center'>
         <div className='mr-10'>
   
-<JavaEditor {...javaEditorProps} />  
+<JavaEditor  javaEditorTitle={javaEditorTitle} javaCode={javaCode} handleJavaCodeOnChange={handleJavaCodeOnChange}  />  
     <ConvertButton/>
         </div>
-        <JsonEditor {...jsonEditorProps}/>
+        <JsonEditor jsonDataTitle={jsonDataTitle} jsonData={jsonData} handleJsonDataOnChange={handleJsonDataOnChange} readOnlyState={readOnlyState}/>
       </div>
     );
 }
