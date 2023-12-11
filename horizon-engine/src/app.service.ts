@@ -40,14 +40,15 @@ export class AppService {
     return 'datasets';
   }
 
-  designPrompt(actualJsonData: string,hidingInfo: object) : Promise<string> {
+  designPrompt(actualJsonData: string, hidingInfo: object): Promise<string> {
     return new Promise((resolve, reject) => {
-      const pythonProcess = spawn('python', ['translateToJson.py']);
+      const pythonProcess = spawn('python', ['designPrompt.py']);
 
       let pythonOutput = '';
 
       pythonProcess.stdout.on('data', (data) => {
         pythonOutput += data.toString();
+        console.log(pythonOutput);
       });
 
       pythonProcess.stderr.on('data', (data) => {
@@ -64,7 +65,14 @@ export class AppService {
         }
       });
 
-      pythonProcess.stdin.write(actualJsonData);
+      const requestData = {
+        actualJsonData,
+        hidingInfo,
+      };
+
+      const requestDataString = JSON.stringify(requestData);
+      console.log('-------service------', requestDataString);
+      pythonProcess.stdin.write(requestDataString);
       pythonProcess.stdin.end();
     });
   }
