@@ -29,10 +29,11 @@ def percentage_to_numerator_and_denominator(percentage):
 
 def get_hidden_indices(total_methods, percentage):
     numerator, denominator = percentage_to_numerator_and_denominator(percentage)
+    indices_to_hide = []
     if(numerator==1):
         indices_to_hide = [i for i in range(0, total_methods) if i % denominator != 0]
     elif((denominator-numerator)==1):
-      indices_to_hide = [i for i in range(0, total_methods) if i % denominator == 0]
+      indices_to_hide = [i for i in range(0, total_methods) if i % denominator == 1]
     elif(numerator== 2 and denominator == 5):
         indices_to_hide = [i for i in range(0, total_methods) if i % denominator != 1 or i % denominator != 3]
     elif(numerator== 3 and denominator == 5):
@@ -51,7 +52,6 @@ def hiding_methods(temp_json, percentage):
         indices_to_hide = get_hidden_indices(total_methods, percentage)
         for index in indices_to_hide:
             methods[index]["name"] = ""
-
   return incomplete_json
 
 def hiding_calls(temp_json, percentage):
@@ -65,7 +65,6 @@ def hiding_calls(temp_json, percentage):
         for index in indices_to_hide:
             methods[index]["calls"] = []
 
-  print(json.dumps(incomplete_json, indent=2))
   return incomplete_json
 
 
@@ -111,19 +110,16 @@ input_json = sys.stdin.read()
 input_data = json.loads(input_json)
 
 original_complete_json_string = input_data.get('actualJsonData', '')
-original_complete_json_string = original_complete_json_string.replace('\r', '');
-# print('--before--', original_complete_json_string)
+original_complete_json_string = original_complete_json_string.replace('\r', '')
+
 original_complete_json = json.dumps(original_complete_json_string)
 original_complete_json = json.loads(original_complete_json)
-
-print('--after--', original_complete_json)
-print('--final--', original_complete_json)
-
+original_complete_json = eval(original_complete_json)
 hiding_info = input_data.get('hidingInfo', {})
 
 incomplete_json = hiding_attributes(original_complete_json, hiding_info)
-# incomplete_string = json.dumps(hiding_info)
-# print(incomplete_string)
+incomplete_string = json.dumps(incomplete_json, indent= 2)
+print(incomplete_string)
 
 # incomplete_string = json.dumps(hiding_info)
 # print('error in code info not split ',incomplete_string)

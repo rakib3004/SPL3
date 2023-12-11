@@ -25,9 +25,8 @@ export class AppController {
     @Body('actualJsonData') actualJsonData: string,
     @Body('hidingInfo') hidingInfo: object,
   ): Promise<string> {
-    console.log('input data', hidingInfo);
     const data = await this.appService.designPrompt(actualJsonData, hidingInfo);
-    console.log('finding python data', data);
+    // console.log('--controller--', data);
     return data;
   }
 

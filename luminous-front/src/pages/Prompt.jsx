@@ -33,9 +33,12 @@ const Prompt = () => {
       selectedOption,
       selectedPercentage
     }
-    console.log(hidingInfo);
     const modifiedJsonResponse = await designPrompt(actualJsonData, hidingInfo);
-    console.log(modifiedJsonResponse);
+    const modifiedJson = JSON.stringify(modifiedJsonResponse.data, null, 2);
+    console.log(modifiedJsonResponse)
+    // const modifiedJson = modifiedJsonResponse.data;
+    setModifiedJsonData(modifiedJson)
+ 
   };
 
   const ConvertButton = () => {

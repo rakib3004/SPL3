@@ -43,12 +43,9 @@ export class AppService {
   designPrompt(actualJsonData: string, hidingInfo: object): Promise<string> {
     return new Promise((resolve, reject) => {
       const pythonProcess = spawn('python', ['designPrompt.py']);
-
       let pythonOutput = '';
-
       pythonProcess.stdout.on('data', (data) => {
         pythonOutput += data.toString();
-        console.log(pythonOutput);
       });
 
       pythonProcess.stderr.on('data', (data) => {
@@ -71,7 +68,6 @@ export class AppService {
       };
 
       const requestDataString = JSON.stringify(requestData);
-      console.log('-------service------', requestDataString);
       pythonProcess.stdin.write(requestDataString);
       pythonProcess.stdin.end();
     });

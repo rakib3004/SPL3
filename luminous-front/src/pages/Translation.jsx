@@ -21,7 +21,6 @@ const Translation = () => {
   const convertJavaCodeToJsonData = async (javaCode) => {
     const jsonResponse = await translateToJson(javaCode);
     const translatedJson = JSON.stringify(jsonResponse.data, null, 2);
-    console.log(translatedJson);
     setJsonData(translatedJson);
   };
 
