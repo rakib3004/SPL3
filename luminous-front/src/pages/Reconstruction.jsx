@@ -3,7 +3,7 @@ import { Button } from "keep-react";
 import { useState } from "react";
 import { reconstructSoftwareArtifact } from "../services/Services";
 const Reconstruction = () => {
-  const promptMessage = "There are some method's are missing, fill up them and complete the JSON file";
+  const promptMessage = "There are some method's calls are missing, fill up them and complete the JSON file";
   const readOnlyState = false;
   const incompleteJsonDataTitle = "Incomplete Json Data";
   const [incompleteJsonData, setIncompleteJsonData] = useState("");
@@ -22,8 +22,6 @@ const Reconstruction = () => {
    
     const completeJsonResponse = await reconstructSoftwareArtifact(incompleteJsonData, promptMessage);
     const modifiedJson = JSON.stringify(completeJsonResponse.data, null, 2);
-    console.log(completeJsonResponse)
-    // const modifiedJson = completeJsonResponse.data;
     setCompleteJsonData(modifiedJson)
  
   };
@@ -61,4 +59,4 @@ const Reconstruction = () => {
   )
 }
 
-export default Reconstruction
+export default Reconstruction;

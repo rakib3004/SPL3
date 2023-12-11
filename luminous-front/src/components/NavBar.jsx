@@ -23,6 +23,8 @@ const NavBar = () => {
           <Navbar.Link linkName="Translation" href="/translation" />
           <Navbar.Link linkName="Prompt" href="/prompt" />
           <Navbar.Link linkName="Reconstruction" href="/reconstruction" />
+          <Navbar.Link linkName="Analytics" href="/analytics" />
+
 
           <Navbar.Link linkName="Datasets" href="https://www.kaggle.com/datasets/mdrakibtrofder/java-code-to-json-translation" />
           <Navbar.Link linkName="About" href="/about" />

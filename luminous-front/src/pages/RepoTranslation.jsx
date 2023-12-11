@@ -5,4 +5,4 @@ const RepoTranslation = () => {
   )
 }
 
-export default RepoTranslation
+export default RepoTranslation;

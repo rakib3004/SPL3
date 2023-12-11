@@ -36,10 +36,6 @@ export class AppService {
     return '{"name": "git_repo"}';
   }
 
-  getDatasets() {
-    return 'datasets';
-  }
-
   designPrompt(actualJsonData: string, hidingInfo: object): Promise<string> {
     return new Promise((resolve, reject) => {
       const pythonProcess = spawn('python', ['designPrompt.py']);
@@ -111,10 +107,6 @@ export class AppService {
 
   getInfo() {
     return 'info';
-  }
-
-  getAnalytics() {
-    return 'analytics';
   }
 
   getAbout() {

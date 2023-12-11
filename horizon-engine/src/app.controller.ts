@@ -15,11 +15,6 @@ export class AppController {
     return await this.appService.translateRepositoryToJSON();
   }
 
-  @Get('/datasets')
-  async getDatasets(): Promise<string> {
-    return await this.appService.getDatasets();
-  }
-
   @Post('/prompt')
   async designPrompt(
     @Body('actualJsonData') actualJsonData: string,
@@ -42,11 +37,6 @@ export class AppController {
   @Get('/info')
   async getInfo(): Promise<string> {
     return await this.appService.getInfo();
-  }
-
-  @Get('/analytics')
-  async getAnalytics(): Promise<string> {
-    return await this.appService.getAnalytics();
   }
 
   @Get('/about')

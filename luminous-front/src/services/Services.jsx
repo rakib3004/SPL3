@@ -61,14 +61,33 @@ export const getInfo = async (jsonData) =>{
     return {message: "Unable to Compile Java Repository"}
   }
 }
-export const getAnalytics = async (actualJson, reconstructedJson) =>{
-  try {
-    const jsonResponse = await axios.get(`${server_url}/analytics`, {actualJson, reconstructedJson});
-     return jsonResponse;
-  } catch (error) {
-    console.error('Error details:', error);
-    return {message: "Unable to Compile Java Repository"}
+export const getAnalytics = (originalJsonData, reconstructedJsonData) =>{
+  const m = originalJsonData.length;
+  const n = reconstructedJsonData.length;
+
+  const dp = [];
+  for (let i = 0; i <= m; i++) {
+    dp[i] = [];
+    for (let j = 0; j <= n; j++) {
+      if (i === 0) {
+        dp[i][j] = j; 
+      } else if (j === 0) {
+        dp[i][j] = i; 
+      } else {
+        dp[i][j] = Math.min(
+          dp[i - 1][j] + 1, 
+          dp[i][j - 1] + 1, 
+          dp[i - 1][j - 1] +
+            (originalJsonData.charAt(i - 1) ===
+            reconstructedJsonData.charAt(j - 1)
+              ? 0
+              : 1),
+        );
+      }
+    }
   }
+
+  return dp[m][n];
 }
 export const getAbout = async () =>{
   try {

@@ -1,14 +1,19 @@
 import sys
 import json
 from openai import OpenAI
+from dotenv import load_dotenv
+import os
 
 
-client = OpenAI(
-api_key = 'access-token',
-)
 
 
 def complete_json_from_gpt(incomplete_json, prompt_message):
+    load_dotenv()
+    OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
+
+    client = OpenAI(
+    api_key = OPENAI_API_KEY,
+    )
 
     chat_completion = client.chat.completions.create(
         messages=[
@@ -44,5 +49,8 @@ incomplete_json = eval(incomplete_json_string)
 prompt_message = input_data.get('promptMessage', {})
 
 complete_json = complete_json_from_gpt(incomplete_json, prompt_message)
-complete_string = json.dumps(complete_json, indent= 2)
+complete_json = complete_json.replace('\r', '')
+complete_json = complete_json.replace('\n', '')
+
+complete_string = json.dumps(complete_json)
 print(complete_string)
