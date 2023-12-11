@@ -17,7 +17,7 @@ const JavaEditor = ({ javaEditorTitle, javaCode, handleJavaCodeOnChange }) => {
         value={javaCode}
         fontSize={14}
         width="600px"
-        height="500px"
+        height="450px"
         showPrintMargin={true}
         showGutter={true}
         highlightActiveLine={true}
