@@ -32,9 +32,9 @@ export const getDatasets = async () =>{
   }
 }
 
-export const getPrompt = async (jsonData, configurationData) =>{
+export const designPrompt = async (jsonData, hidingInfo) =>{
   try {
-    const jsonResponse = await axios.post(`${server_url}/prompt`, { jsonData, configurationData});
+    const jsonResponse = await axios.post(`${server_url}/prompt`, { jsonData, hidingInfo});
      return jsonResponse;
   } catch (error) {
     console.error('Error details:', error);

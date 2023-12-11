@@ -11,37 +11,40 @@ export class AppController {
   }
 
   @Post('/repo-translate')
-  translateRepositoryToJSON(): string {
-    return this.appService.translateRepositoryToJSON();
+  async translateRepositoryToJSON(): string {
+    return await this.appService.translateRepositoryToJSON();
   }
 
   @Get('/datasets')
-  getDatasets(): string {
-    return this.appService.getDatasets();
+  async getDatasets(): string {
+    return await this.appService.getDatasets();
   }
 
   @Post('/prompt')
-  getPrompt(): string {
-    return this.appService.getPrompt();
+  async designPrompt(
+    @Body('actualJsonData') actualJsonData: string,
+    @Body('hidingInfo') hidingInfo: object,
+  ): Promise<string> {
+    return await this.appService.designPrompt(actualJsonData,hidingInfo);
   }
 
   @Post('/reconstruct')
-  reconstructSoftwareArtifacts(): string {
-    return this.appService.reconstructSoftwareArtifacts();
+  async reconstructSoftwareArtifacts(): string {
+    return await this.appService.reconstructSoftwareArtifacts();
   }
 
   @Get('/info')
-  getInfo(): string {
-    return this.appService.getInfo();
+  async getInfo(): string {
+    return await this.appService.getInfo();
   }
 
   @Get('/analytics')
-  getAnalytics(): string {
-    return this.appService.getAnalytics();
+  async getAnalytics(): string {
+    return await this.appService.getAnalytics();
   }
 
   @Get('/about')
-  getAbout(): string {
-    return this.appService.getAbout();
+  async getAbout(): string {
+    return await this.appService.getAbout();
   }
 }
