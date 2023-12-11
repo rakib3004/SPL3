@@ -30,9 +30,10 @@ const Prompt = () => {
 
   const convertActualJsonToModifiedJson = async (actualJsonData, selectedOption, selectedPercentage) => {
     const hidingInfo = {
-      option: selectedOption,
-      percentage: selectedPercentage
+      selectedOption,
+      selectedPercentage
     }
+    console.log(hidingInfo);
     const modifiedJsonResponse = await designPrompt(actualJsonData, hidingInfo);
     console.log(modifiedJsonResponse);
   };
@@ -41,7 +42,7 @@ const Prompt = () => {
     return (
       <Button
         size="lg"
-        onClick={() => convertActualJsonToModifiedJson(actualJsonData)}
+        onClick={() => convertActualJsonToModifiedJson(actualJsonData, selectedOption, selectedPercentage)}
       >
         Convert
       </Button>
