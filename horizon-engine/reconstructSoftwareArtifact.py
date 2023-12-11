@@ -4,7 +4,7 @@ from openai import OpenAI
 
 
 client = OpenAI(
-api_key = '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',
+api_key = 'token-ad',
 )
 
 
