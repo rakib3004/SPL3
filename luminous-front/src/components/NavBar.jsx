@@ -20,6 +20,10 @@ const NavBar = () => {
           className="lg:flex hidden items-center justify-between gap-8"
         >
           <Navbar.Link linkName="Home" href="/" />
+          <Navbar.Link linkName="Translation" href="/translation" />
+          <Navbar.Link linkName="Prompt" href="/prompt" />
+          <Navbar.Link linkName="Reconstruction" href="/reconstruction" />
+
           <Navbar.Link linkName="Datasets" href="https://www.kaggle.com/datasets/mdrakibtrofder/java-code-to-json-translation" />
           <Navbar.Link linkName="About" href="/about" />
         </Navbar.Container>

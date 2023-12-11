@@ -31,7 +31,7 @@ def get_hidden_indices(total_methods, percentage):
     numerator, denominator = percentage_to_numerator_and_denominator(percentage)
     indices_to_hide = []
     if(numerator==1):
-        indices_to_hide = [i for i in range(0, total_methods) if i % denominator != 0]
+        indices_to_hide = [i for i in range(0, total_methods) if i % denominator != 1]
     elif((denominator-numerator)==1):
       indices_to_hide = [i for i in range(0, total_methods) if i % denominator == 1]
     elif(numerator== 2 and denominator == 5):

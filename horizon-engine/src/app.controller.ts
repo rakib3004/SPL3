@@ -26,17 +26,16 @@ export class AppController {
     @Body('hidingInfo') hidingInfo: object,
   ): Promise<string> {
     const data = await this.appService.designPrompt(actualJsonData, hidingInfo);
-    // console.log('--controller--', data);
     return data;
   }
   @Post('/reconstruct')
-  async reconstructSoftwareArtifacts(
+  async reconstructSoftwareArtifact(
     @Body('incompleteJsonData') incompleteJsonData: string,
-    @Body('prompt') prompt: string,
+    @Body('promptMessage') promptMessage: string,
   ): Promise<string> {
-    return await this.appService.reconstructSoftwareArtifacts(
+    return await this.appService.reconstructSoftwareArtifact(
       incompleteJsonData,
-      prompt,
+      promptMessage,
     );
   }
 

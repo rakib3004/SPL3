@@ -1,9 +1,9 @@
 import JsonEditor from "../components/JsonEditor";
 import { Button } from "keep-react";
 import { useState } from "react";
-import { reconstructSoftwareArtifacts } from "../services/Services";
+import { reconstructSoftwareArtifact } from "../services/Services";
 const Reconstruction = () => {
-  const prompt = "There are some method's are missing, fill up them and complete the JSON file";
+  const promptMessage = "There are some method's are missing, fill up them and complete the JSON file";
   const readOnlyState = false;
   const incompleteJsonDataTitle = "Incomplete Json Data";
   const [incompleteJsonData, setIncompleteJsonData] = useState("");
@@ -18,9 +18,9 @@ const Reconstruction = () => {
     setCompleteJsonData(json);
   };
 
-  const convertIncompleteJsonToCompleteJson = async (incompleteJsonData, prompt) => {
+  const convertIncompleteJsonToCompleteJson = async (incompleteJsonData, promptMessage) => {
    
-    const completeJsonResponse = await reconstructSoftwareArtifacts(incompleteJsonData, prompt);
+    const completeJsonResponse = await reconstructSoftwareArtifact(incompleteJsonData, promptMessage);
     const modifiedJson = JSON.stringify(completeJsonResponse.data, null, 2);
     console.log(completeJsonResponse)
     // const modifiedJson = completeJsonResponse.data;
@@ -32,7 +32,7 @@ const Reconstruction = () => {
     return (
       <Button
         size="lg"
-        onClick={() => convertIncompleteJsonToCompleteJson(incompleteJsonData, prompt)}
+        onClick={() => convertIncompleteJsonToCompleteJson(incompleteJsonData, promptMessage)}
       >
         Modify JSON
       </Button>
