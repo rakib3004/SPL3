@@ -73,14 +73,12 @@ export class AppService {
     });
   }
 
-  reconstructSoftwareArtifacts(
+  reconstructSoftwareArtifact(
     incompleteJsonData: string,
-    prompt: string,
+    promptMessage: string,
   ): Promise<string> {
     return new Promise((resolve, reject) => {
-      const pythonProcess = spawn('python', [
-        'reconstructSoftwareArtifacts.py',
-      ]);
+      const pythonProcess = spawn('python', ['reconstructSoftwareArtifact.py']);
       let pythonOutput = '';
       pythonProcess.stdout.on('data', (data) => {
         pythonOutput += data.toString();
@@ -102,7 +100,7 @@ export class AppService {
 
       const requestData = {
         incompleteJsonData,
-        prompt,
+        promptMessage,
       };
 
       const requestDataString = JSON.stringify(requestData);
