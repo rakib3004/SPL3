@@ -1,23 +1,11 @@
-import os
+import sys
 import json
-import openai
-import Levenshtein
 from openai import OpenAI
-import math
 
 
 client = OpenAI(
 api_key = 'token---of--access',
 )
-
-def levenshtein_distance(filename, gpt_completed_json, original_complete_json):
-    print(gpt_completed_json)
-    levenshtein_distance = Levenshtein.distance(
-    str(gpt_completed_json), str(original_complete_json)
-    )
-
-    print(filename, levenshtein_distance)
-
 
 
 def complete_json_from_gpt(filename, original_complete_json, incomplete_json):
@@ -33,4 +21,18 @@ def complete_json_from_gpt(filename, original_complete_json, incomplete_json):
         model="gpt-3.5-turbo",
     )
     gpt_completed_json = chat_completion.choices[0].message.content
-    levenshtein_distance(filename, gpt_completed_json, original_complete_json)
+
+
+input_json = sys.stdin.read()
+input_data = json.loads(input_json)
+
+original_complete_json_string = input_data.get('incompleteJsonData', '')
+original_complete_json_string = original_complete_json_string.replace('\r', '')
+
+original_complete_json = json.dumps(original_complete_json_string)
+original_complete_json = json.loads(original_complete_json)
+original_complete_json = eval(original_complete_json)
+hiding_info = input_data.get('prompt', {})
+
+incomplete_string = json.dumps(incomplete_json, indent= 2)
+print(incomplete_string)

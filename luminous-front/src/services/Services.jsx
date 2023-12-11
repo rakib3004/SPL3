@@ -42,9 +42,9 @@ export const designPrompt = async (actualJsonData, hidingInfo) =>{
   }
 }
 
-export const reconstructSoftwareArtifacts = async (jsonData) =>{
+export const reconstructSoftwareArtifacts = async (incompleteJsonData, prompt) =>{
   try {
-    const jsonResponse = await axios.post(`${server_url}/reconstruct`, { jsonData });
+    const jsonResponse = await axios.post(`${server_url}/reconstruct`, { incompleteJsonData, prompt });
      return jsonResponse;
   } catch (error) {
     console.error('Error details:', error);

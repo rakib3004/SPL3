@@ -29,10 +29,15 @@ export class AppController {
     // console.log('--controller--', data);
     return data;
   }
-
   @Post('/reconstruct')
-  async reconstructSoftwareArtifacts(): Promise<string> {
-    return await this.appService.reconstructSoftwareArtifacts();
+  async reconstructSoftwareArtifacts(
+    @Body('incompleteJsonData') incompleteJsonData: string,
+    @Body('prompt') prompt: string,
+  ): Promise<string> {
+    return await this.appService.reconstructSoftwareArtifacts(
+      incompleteJsonData,
+      prompt,
+    );
   }
 
   @Get('/info')

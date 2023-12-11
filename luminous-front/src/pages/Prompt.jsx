@@ -5,12 +5,12 @@ import { designPrompt } from "../services/Services";
 import { Label, Radio } from "keep-react";
 
 const Prompt = () => {
+  const readOnlyState = false;
   const actualJsonDataTitle = "Actual Json Data";
   const [actualJsonData, setActualJsonData] = useState("");
   const handleActualJsonDataOnChange = (json) => {
     setActualJsonData(json);
   };
-  const readOnlyState = false;
 
   const modifiedJsonDataTitle = "Modified Json Data";
   const [modifiedJsonData, setModifiedJsonData] = useState("");
@@ -41,13 +41,13 @@ const Prompt = () => {
  
   };
 
-  const ConvertButton = () => {
+  const ModifyJsonButton = () => {
     return (
       <Button
         size="lg"
         onClick={() => convertActualJsonToModifiedJson(actualJsonData, selectedOption, selectedPercentage)}
       >
-        Convert
+        Modify JSON
       </Button>
     );
   };
@@ -197,7 +197,7 @@ const Prompt = () => {
         />
         <HidingOptions />
         <HidingInfoPercentage/>
-        <ConvertButton />
+        <ModifyJsonButton />
       </div>
       <JsonEditor
         jsonDataTitle={modifiedJsonDataTitle}
