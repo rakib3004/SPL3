@@ -16,7 +16,7 @@ const Translation = () => {
   const handleJsonDataOnChange = (json) => {
     setJsonData(json);
   };
-  const readOnlyState = true;
+  const readOnlyState = false;
 
   const convertJavaCodeToJsonData = async (javaCode) => {
     const jsonResponse = await translateToJson(javaCode);
