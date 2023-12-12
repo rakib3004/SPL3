@@ -187,6 +187,8 @@ const Prompt = () => {
   };
 
   return (
+    <div>
+    <h1 className="text-4xl text-center">Modify JSON Info</h1>
     <div className="flex flex-column justify-center">
       <div className="mr-10">
         <JsonEditor
@@ -205,6 +207,7 @@ const Prompt = () => {
         handleJsonDataOnChange={handleModifiedJsonDataOnChange}
         readOnlyState={readOnlyState}
       />
+    </div>
     </div>
   );
 };

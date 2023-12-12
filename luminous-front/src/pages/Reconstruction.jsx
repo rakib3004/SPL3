@@ -77,7 +77,8 @@ const Reconstruction = () => {
 
   return (
  
-
+    <div>
+    <h1 className="text-4xl text-center">JSON Info Reconstruction Using LLM</h1>
 <div className="flex flex-column justify-center">
       
       <div className="mr-10">
@@ -101,7 +102,7 @@ const Reconstruction = () => {
         readOnlyState={readOnlyState}
       />
     </div>
-    // </div>
+     </div>
      
   )
 }

@@ -33,7 +33,9 @@ const Translation = () => {
   };
 
   return (
-    <div className="flex flex-column justify-center">
+    <div>
+      <h1 className="text-4xl text-center">Translate Your Java Code To JSON Info</h1>
+<div className="flex flex-column justify-center">
       <div className="mr-10">
         <JavaEditor
           javaEditorTitle={javaEditorTitle}
@@ -49,6 +51,8 @@ const Translation = () => {
         readOnlyState={readOnlyState}
       />
     </div>
+    </div>
+    
   );
 };
 
