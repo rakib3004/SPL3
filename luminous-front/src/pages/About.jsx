@@ -1,7 +1,14 @@
 
+import { Button,Spinner } from "keep-react";
+
 const About = () => {
   return (
-    <div>About</div>
+    <Button type="primary" size="md">
+    <span className="pr-2">
+      <Spinner color="info" size="md" />
+   </span>
+    Please wait .. .. ..
+  </Button>
   )
 }
 

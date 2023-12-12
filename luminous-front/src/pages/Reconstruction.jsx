@@ -1,9 +1,12 @@
 import JsonEditor from "../components/JsonEditor";
-import { Button, Textarea } from "keep-react";
+import { Button  } from "keep-react";
 import { useState } from "react";
 import { reconstructSoftwareArtifact } from "../services/Services";
 import TextEditor from "../components/TextEditor";
 const Reconstruction = () => {
+
+  const [isLoading, setIsLoading] = useState(false);
+
   const [promptMessage, setPromptMessage] = useState("There are some method's calls are missing, fill up them and complete the JSON file");
   const readOnlyState = false;
   const incompleteJsonDataTitle = "Incomplete Json Data";
@@ -25,11 +28,29 @@ const Reconstruction = () => {
 
   const convertIncompleteJsonToCompleteJson = async (incompleteJsonData, promptMessage) => {
     console.log(promptMessage);
-        const completeJsonResponse = await reconstructSoftwareArtifact(incompleteJsonData, promptMessage);
-    const modifiedJson = JSON.stringify(completeJsonResponse.data, null, 2);
-    setCompleteJsonData(modifiedJson)
+    setIsLoading(true);
  
+    try {
+      const completeJsonResponse = await reconstructSoftwareArtifact(incompleteJsonData, promptMessage);
+      const modifiedJson = JSON.stringify(completeJsonResponse.data, null, 2);
+      setCompleteJsonData(modifiedJson);
+    } catch (error) {
+      console.error('Error:', error);
+    } finally {
+      setIsLoading(false);
+    }
   };
+
+  const Spinner = () =>{
+    return (
+      <Button type="primary" size="md">
+    <span className="pr-2">
+      <Spinner color="info" size="md" />
+   </span>
+    Please wait .. .. ..
+  </Button>
+    );
+  }
 
   const ReconstructJsonButton = () => {
     return (
@@ -55,7 +76,10 @@ const Reconstruction = () => {
 
 
   return (
-     <div className="flex flex-column justify-center">
+ 
+
+<div className="flex flex-column justify-center">
+      
       <div className="mr-10">
         <JsonEditor
           jsonDataTitle={incompleteJsonDataTitle}
@@ -63,9 +87,11 @@ const Reconstruction = () => {
           handleJsonDataOnChange={handleActualJsonDataOnChange}
           readOnlyState={readOnlyState}
         />
-        <div className="my-6">
-        <PromptMessageField/>
+        <div className="my-6 flex flex-row gap-64">
+        <PromptMessageField/>        
+
         </div>
+
         <ReconstructJsonButton />
       </div>
       <JsonEditor
@@ -75,6 +101,8 @@ const Reconstruction = () => {
         readOnlyState={readOnlyState}
       />
     </div>
+    // </div>
+     
   )
 }
 

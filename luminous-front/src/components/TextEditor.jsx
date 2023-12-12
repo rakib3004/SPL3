@@ -12,7 +12,7 @@ const TextEditor = ({jsonData, handleJsonDataOnChange}) => {
       theme="monokai"
       onChange={handleJsonDataOnChange}
       value={jsonData}
-      fontSize={16}
+      fontSize={18}
       width="300px"
       height="150px"
       showPrintMargin={true}

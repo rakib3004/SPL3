@@ -3,8 +3,26 @@ import json
 from openai import OpenAI
 from dotenv import load_dotenv
 import os
+from bardapi import Bard
 
 
+def complete_json_from_bard(incomplete_json, prompt_message):
+    load_dotenv()
+    os.environ['_BARD_API_KEY']= os.getenv("_BARD_API_KEY")
+
+    bard_prompt = f"{incomplete_json} {prompt_message}"
+
+    bard_generated_response = Bard().get_answer(bard_prompt)['content']
+
+    start_index = bard_generated_response.find('{')
+    end_index = bard_generated_response.rfind('}')
+
+    if start_index == -1:
+        bard_generated_json = bard_generated_response
+    elif end_index == -1:
+        bard_generated_json = bard_generated_response
+    else:
+        bard_generated_json = bard_generated_response[start_index:end_index + 1]
 
 
 def complete_json_from_gpt(incomplete_json, prompt_message):
