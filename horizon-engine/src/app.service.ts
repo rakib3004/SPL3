@@ -1,14 +1,14 @@
 import { Injectable } from '@nestjs/common';
 import { spawn } from 'child_process';
 
-@Injectable()
+@Injectable() 
 export class AppService {
   async translateToJson(javaCode: string): Promise<string> {
     return new Promise((resolve, reject) => {
       const pythonProcess = spawn('python', ['translateToJson.py']);
 
       let pythonOutput = '';
-
+ 
       pythonProcess.stdout.on('data', (data) => {
         pythonOutput += data.toString();
       });
