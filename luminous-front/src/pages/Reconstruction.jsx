@@ -12,7 +12,7 @@ const Reconstruction = () => {
   };
 
  
-  const completeJsonDataTitle = "Complete Json By GPT";
+  const completeJsonDataTitle = "Complete Json By Large Language Model";
   const [completeJsonData, setCompleteJsonData] = useState("");
   const handleModifiedJsonDataOnChange = (json) => {
     setCompleteJsonData(json);
@@ -32,7 +32,7 @@ const Reconstruction = () => {
         size="lg"
         onClick={() => convertIncompleteJsonToCompleteJson(incompleteJsonData, promptMessage)}
       >
-        Modify JSON
+        Complete JSON
       </Button>
     );
   };
