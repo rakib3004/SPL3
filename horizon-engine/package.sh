@@ -1,1 +1,1 @@
-pip install javalang openai python-dotenv
+pip install javalang openai python-dotenv bardapi

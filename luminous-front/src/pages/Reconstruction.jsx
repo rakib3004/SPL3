@@ -1,9 +1,10 @@
 import JsonEditor from "../components/JsonEditor";
-import { Button } from "keep-react";
+import { Button, Textarea } from "keep-react";
 import { useState } from "react";
 import { reconstructSoftwareArtifact } from "../services/Services";
+import TextEditor from "../components/TextEditor";
 const Reconstruction = () => {
-  const promptMessage = "There are some method's calls are missing, fill up them and complete the JSON file";
+  const [promptMessage, setPromptMessage] = useState("There are some method's calls are missing, fill up them and complete the JSON file");
   const readOnlyState = false;
   const incompleteJsonDataTitle = "Incomplete Json Data";
   const [incompleteJsonData, setIncompleteJsonData] = useState("");
@@ -11,6 +12,9 @@ const Reconstruction = () => {
     setIncompleteJsonData(json);
   };
 
+  const handlePromptMessageOnChange = (message) => {
+    setPromptMessage(message);
+  };
  
   const completeJsonDataTitle = "Complete Json By Large Language Model";
   const [completeJsonData, setCompleteJsonData] = useState("");
@@ -18,9 +22,10 @@ const Reconstruction = () => {
     setCompleteJsonData(json);
   };
 
+
   const convertIncompleteJsonToCompleteJson = async (incompleteJsonData, promptMessage) => {
-   
-    const completeJsonResponse = await reconstructSoftwareArtifact(incompleteJsonData, promptMessage);
+    console.log(promptMessage);
+        const completeJsonResponse = await reconstructSoftwareArtifact(incompleteJsonData, promptMessage);
     const modifiedJson = JSON.stringify(completeJsonResponse.data, null, 2);
     setCompleteJsonData(modifiedJson)
  
@@ -37,6 +42,17 @@ const Reconstruction = () => {
     );
   };
 
+  const PromptMessageField = () =>{
+    return (
+   
+    <TextEditor
+    jsonData={promptMessage}
+    handleJsonDataOnChange={handlePromptMessageOnChange}
+  />
+
+    );
+  }
+
 
   return (
      <div className="flex flex-column justify-center">
@@ -47,6 +63,9 @@ const Reconstruction = () => {
           handleJsonDataOnChange={handleActualJsonDataOnChange}
           readOnlyState={readOnlyState}
         />
+        <div className="my-6">
+        <PromptMessageField/>
+        </div>
         <ReconstructJsonButton />
       </div>
       <JsonEditor

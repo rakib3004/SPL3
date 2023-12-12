@@ -35,7 +35,7 @@ def get_hidden_indices(total_methods, percentage):
     elif((denominator-numerator)==1):
       indices_to_hide = [i for i in range(0, total_methods) if i % denominator == 1]
     elif(numerator== 2 and denominator == 5):
-        indices_to_hide = [i for i in range(0, total_methods) if i % denominator != 1 or i % denominator != 3]
+        indices_to_hide = [i for i in range(0, total_methods) if i % denominator != 0 or i % denominator != 2]
     elif(numerator== 3 and denominator == 5):
         indices_to_hide = [i for i in range(0, total_methods) if i % denominator != 0 or i % denominator != 2 or i % denominator != 4] 
 
@@ -70,21 +70,20 @@ def hiding_calls(temp_json, percentage):
 
 def hiding_relationships(temp_json, percentage):
   total_relationships = 0
-
   incomplete_json = temp_json
   for entry in incomplete_json.get("classes", []) + incomplete_json.get("abstract_classes", []):
         relationships = entry.get("relationships", [])
         total_relationships += len(relationships)
 
-  relationship_index=0
   for entry in incomplete_json.get("classes", []) + incomplete_json.get("abstract_classes", []):
         relationships = entry.get("relationships", [])
-
-        if(relationship_index%3!=0):
-          relationships[0]["relationships"] = []
-          relationship_index+=1
-
-  # print(json.dumps(incomplete_json, indent=2))
+        total_relationships = len(relationships)
+        count =0
+        for index in range(0,total_relationships):
+          if(index%3!=0):
+            relationships.pop(index-count)
+            count = count +1
+        
   return incomplete_json
 
 

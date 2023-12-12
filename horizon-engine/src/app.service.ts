@@ -6,13 +6,12 @@ export class AppService {
   async translateToJson(javaCode: string): Promise<string> {
     return new Promise((resolve, reject) => {
       const pythonProcess = spawn('python', ['translateToJson.py']);
-
       let pythonOutput = '';
  
       pythonProcess.stdout.on('data', (data) => {
         pythonOutput += data.toString();
       });
-
+  
       pythonProcess.stderr.on('data', (data) => {
         console.error(`Error from Python process: ${data}`);
         reject(data.toString());
