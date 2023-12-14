@@ -45,6 +45,7 @@ const Prompt = () => {
     return (
       <Button
         size="lg"
+        color="success"
         onClick={() => convertActualJsonToModifiedJson(actualJsonData, selectedOption, selectedPercentage)}
       >
         Modify JSON

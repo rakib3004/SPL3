@@ -29,6 +29,7 @@ const Analytics = () => {
     return (
       <Button
         size="lg"
+        color="success"
         onClick={() => measureOriginalJsonAndReconstructedJson(originalJsonData, reconstructedJsonData)}
       >
         Calculate Distance

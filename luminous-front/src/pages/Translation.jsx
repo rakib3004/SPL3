@@ -26,7 +26,7 @@ const Translation = () => {
 
   const ConvertButton = () => {
     return (
-      <Button size="lg" onClick={() => convertJavaCodeToJsonData(javaCode)}>
+      <Button size="lg" color="success" onClick={() => convertJavaCodeToJsonData(javaCode)}>
         Convert
       </Button>
     );

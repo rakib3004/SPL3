@@ -56,6 +56,7 @@ const Reconstruction = () => {
     return (
       <Button
         size="lg"
+        color="success"
         onClick={() => convertIncompleteJsonToCompleteJson(incompleteJsonData, promptMessage)}
       >
         Complete JSON

@@ -32,43 +32,43 @@ const Menu = () => {
     <div  className="ml-40">
     <div className="ml-96">
       <div className="mb-6">
-        <Button size="lg" onClick={goToTranslation}>
+        <Button size="lg" color="success" onClick={goToTranslation}>
           Java Code To JSON Translation
         </Button>
       </div>
 
       <div className="mb-6">
-        <Button size="lg" onClick={goToTranslation}>
+        <Button size="lg" color="success" onClick={goToTranslation}>
           Java Code To JSON Translation
         </Button>
       </div>
 
       <div className="mb-6">
-        <Button size="lg" onClick={goToRepoTranslation}>
+        <Button size="lg" color="success" onClick={goToRepoTranslation}>
           Java Repository Translation
         </Button>
       </div>
 
       <div className="mb-6">
-        <Button size="lg" onClick={goToPrompt}>
+        <Button size="lg" color="success" onClick={goToPrompt}>
           Prompt Engineering
         </Button>
       </div>
 
       <div className="mb-6">
-        <Button size="lg" onClick={goToReconstruction}>
+        <Button size="lg" color="success" onClick={goToReconstruction}>
           Reconstruction
         </Button>
       </div>
 
       <div className="mb-6">
-        <Button size="lg" onClick={goToInfo}>
+        <Button size="lg" color="success" onClick={goToInfo}>
           JSON Info
         </Button>
       </div>
 
       <div className="mb-6">
-        <Button size="lg" onClick={goToAnalysis}>
+        <Button size="lg" color="success" onClick={goToAnalysis}>
           Reconstruction Analysis
         </Button>
       </div>
