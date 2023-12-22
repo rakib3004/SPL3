@@ -26,7 +26,11 @@ const Translation = () => {
 
   const ConvertButton = () => {
     return (
-      <Button size="lg" color="success" onClick={() => convertJavaCodeToJsonData(javaCode)}>
+      <Button
+        size="lg"
+        color="success"
+        onClick={() => convertJavaCodeToJsonData(javaCode)}
+      >
         Convert
       </Button>
     );
@@ -34,25 +38,28 @@ const Translation = () => {
 
   return (
     <div>
-      <h1 className="text-4xl text-center">Translate Your Java Code To JSON Info</h1>
-<div className="flex flex-column justify-center">
-      <div className="mr-10">
-        <JavaEditor
-          javaEditorTitle={javaEditorTitle}
-          javaCode={javaCode}
-          handleJavaCodeOnChange={handleJavaCodeOnChange}
+      <h1 className="text-4xl text-center">
+        Translate Your Java Code To JSON Info
+      </h1>
+      <div className="flex flex-column justify-center">
+        <div className="mr-10">
+          <JavaEditor
+            javaEditorTitle={javaEditorTitle}
+            javaCode={javaCode}
+            handleJavaCodeOnChange={handleJavaCodeOnChange}
+          />
+          <div className="my-6">
+            <ConvertButton />
+          </div>
+        </div>
+        <JsonEditor
+          jsonDataTitle={jsonDataTitle}
+          jsonData={jsonData}
+          handleJsonDataOnChange={handleJsonDataOnChange}
+          readOnlyState={readOnlyState}
         />
-        <ConvertButton />
       </div>
-      <JsonEditor
-        jsonDataTitle={jsonDataTitle}
-        jsonData={jsonData}
-        handleJsonDataOnChange={handleJsonDataOnChange}
-        readOnlyState={readOnlyState}
-      />
     </div>
-    </div>
-    
   );
 };
 

@@ -28,17 +28,20 @@ const Prompt = () => {
     setSelectedOptionPercentage(event.target.value);
   };
 
-  const convertActualJsonToModifiedJson = async (actualJsonData, selectedOption, selectedPercentage) => {
+  const convertActualJsonToModifiedJson = async (
+    actualJsonData,
+    selectedOption,
+    selectedPercentage
+  ) => {
     const hidingInfo = {
       selectedOption,
-      selectedPercentage
-    }
+      selectedPercentage,
+    };
     const modifiedJsonResponse = await designPrompt(actualJsonData, hidingInfo);
     const modifiedJson = JSON.stringify(modifiedJsonResponse.data, null, 2);
-    console.log(modifiedJsonResponse)
+    console.log(modifiedJsonResponse);
     // const modifiedJson = modifiedJsonResponse.data;
-    setModifiedJsonData(modifiedJson)
- 
+    setModifiedJsonData(modifiedJson);
   };
 
   const ModifyJsonButton = () => {
@@ -46,7 +49,13 @@ const Prompt = () => {
       <Button
         size="lg"
         color="success"
-        onClick={() => convertActualJsonToModifiedJson(actualJsonData, selectedOption, selectedPercentage)}
+        onClick={() =>
+          convertActualJsonToModifiedJson(
+            actualJsonData,
+            selectedOption,
+            selectedPercentage
+          )
+        }
       >
         Modify JSON
       </Button>
@@ -60,48 +69,46 @@ const Prompt = () => {
           <b>Choose options</b>
         </legend>
         <div className="flex flex-row">
-        <div className="flex items-center gap-2 mr-6">
-          <Radio
-            sizing="lg"
-            id="country-1"
-            name="hiding-info"
-            selected={selectedOption}
-            onOptionChange={handleOptionChange}
-            radioShape="circle"
-            value="hiding-methods"
-          />
-          <Label htmlFor="country-1">Hiding Methods</Label>
-        </div>
-        <div className="flex items-center gap-2 mr-6">
-          <Radio
-            sizing="lg"
-            id="country-2"
-            name="hiding-info"
-            selected={selectedOption}
-            onOptionChange={handleOptionChange}
-            radioShape="circle"
-            value="hiding-calls"
-          />
-          <Label htmlFor="country-2">Hiding Calls</Label>
-        </div>
-        <div className="flex items-center gap-2">
-          <Radio
-            sizing="lg"
-            id="country-3"
-            name="hiding-info"
-            selected={selectedOption}
-            onOptionChange={handleOptionChange}
-            radioShape="circle"
-            value="hiding-relationships"
-          />
-          <Label htmlFor="country-3">Hiding Relationships</Label>
-        </div>
+          <div className="flex items-center gap-2 mr-6">
+            <Radio
+              sizing="lg"
+              id="country-1"
+              name="hiding-info"
+              selected={selectedOption}
+              onOptionChange={handleOptionChange}
+              radioShape="circle"
+              value="hiding-methods"
+            />
+            <Label htmlFor="country-1">Hiding Methods</Label>
+          </div>
+          <div className="flex items-center gap-2 mr-6">
+            <Radio
+              sizing="lg"
+              id="country-2"
+              name="hiding-info"
+              selected={selectedOption}
+              onOptionChange={handleOptionChange}
+              radioShape="circle"
+              value="hiding-calls"
+            />
+            <Label htmlFor="country-2">Hiding Calls</Label>
+          </div>
+          <div className="flex items-center gap-2">
+            <Radio
+              sizing="lg"
+              id="country-3"
+              name="hiding-info"
+              selected={selectedOption}
+              onOptionChange={handleOptionChange}
+              radioShape="circle"
+              value="hiding-relationships"
+            />
+            <Label htmlFor="country-3">Hiding Relationships</Label>
+          </div>
         </div>
       </fieldset>
     );
   };
-
-
 
   const HidingInfoPercentage = () => {
     return (
@@ -110,78 +117,78 @@ const Prompt = () => {
           <b>Choose how much info will hide</b>
         </legend>
         <div className="flex flex-row">
-        <div className="flex items-center gap-2 mr-6">
-          <Radio
-            sizing="lg"
-            id="country-1"
-            name="hiding-info-percentage"
-            selected={selectedPercentage}
-            onOptionChange={handlePercentageChange}
-            radioShape="circle"
-            value="one-by-three-remaining"
-          />
-          <Label htmlFor="country-1">66%</Label>
-        </div>
-        <div className="flex items-center gap-2 mr-6">
-          <Radio
-            sizing="lg"
-            id="country-2"
-            name="hiding-info-percentage"
-            selected={selectedPercentage}
-            onOptionChange={handlePercentageChange}
-            radioShape="circle"
-            value="one-by-two-remaining"
-          />
-          <Label htmlFor="country-2">50%</Label>
-        </div>
-        <div className="flex items-center gap-2 mr-6">
-          <Radio
-            sizing="lg"
-            id="country-3"
-            name="hiding-info-percentage"
-            selected={selectedPercentage}
-            onOptionChange={handlePercentageChange}
-            radioShape="circle"
-            value="two-by-five-remaining"
-          />
-          <Label htmlFor="country-3">60%</Label>
-        </div>
-        <div className="flex items-center gap-2 mr-6">
-          <Radio
-            sizing="lg"
-            id="country-3"
-            name="hiding-info-percentage"
-            selected={selectedPercentage}
-            onOptionChange={handlePercentageChange}
-            radioShape="circle"
-            value="two-by-three-remaining"
-          />
-          <Label htmlFor="country-3">33%</Label>
-        </div>
-        <div className="flex items-center gap-2 mr-6">
-          <Radio
-            sizing="lg"
-            id="country-3"
-            name="hiding-info-percentage"
-            selected={selectedPercentage}
-            onOptionChange={handlePercentageChange}
-            radioShape="circle"
-            value="three-by-five-remaining"
-          />
-          <Label htmlFor="country-3">40%</Label>
-        </div>
-        <div className="flex items-center gap-2">
-          <Radio
-            sizing="lg"
-            id="country-3"
-            name="hiding-info-percentage"
-            selected={selectedPercentage}
-            onOptionChange={handlePercentageChange}
-            radioShape="circle"
-            value="three-by-four-remaining"
-          />
-          <Label htmlFor="country-3">25%</Label>
-        </div>
+          <div className="flex items-center gap-2 mr-6">
+            <Radio
+              sizing="lg"
+              id="country-1"
+              name="hiding-info-percentage"
+              selected={selectedPercentage}
+              onOptionChange={handlePercentageChange}
+              radioShape="circle"
+              value="one-by-three-remaining"
+            />
+            <Label htmlFor="country-1">66%</Label>
+          </div>
+          <div className="flex items-center gap-2 mr-6">
+            <Radio
+              sizing="lg"
+              id="country-2"
+              name="hiding-info-percentage"
+              selected={selectedPercentage}
+              onOptionChange={handlePercentageChange}
+              radioShape="circle"
+              value="one-by-two-remaining"
+            />
+            <Label htmlFor="country-2">50%</Label>
+          </div>
+          <div className="flex items-center gap-2 mr-6">
+            <Radio
+              sizing="lg"
+              id="country-3"
+              name="hiding-info-percentage"
+              selected={selectedPercentage}
+              onOptionChange={handlePercentageChange}
+              radioShape="circle"
+              value="two-by-five-remaining"
+            />
+            <Label htmlFor="country-3">60%</Label>
+          </div>
+          <div className="flex items-center gap-2 mr-6">
+            <Radio
+              sizing="lg"
+              id="country-3"
+              name="hiding-info-percentage"
+              selected={selectedPercentage}
+              onOptionChange={handlePercentageChange}
+              radioShape="circle"
+              value="two-by-three-remaining"
+            />
+            <Label htmlFor="country-3">33%</Label>
+          </div>
+          <div className="flex items-center gap-2 mr-6">
+            <Radio
+              sizing="lg"
+              id="country-3"
+              name="hiding-info-percentage"
+              selected={selectedPercentage}
+              onOptionChange={handlePercentageChange}
+              radioShape="circle"
+              value="three-by-five-remaining"
+            />
+            <Label htmlFor="country-3">40%</Label>
+          </div>
+          <div className="flex items-center gap-2">
+            <Radio
+              sizing="lg"
+              id="country-3"
+              name="hiding-info-percentage"
+              selected={selectedPercentage}
+              onOptionChange={handlePercentageChange}
+              radioShape="circle"
+              value="three-by-four-remaining"
+            />
+            <Label htmlFor="country-3">25%</Label>
+          </div>
         </div>
       </fieldset>
     );
@@ -189,26 +196,28 @@ const Prompt = () => {
 
   return (
     <div>
-    <h1 className="text-4xl text-center">Modify JSON Info</h1>
-    <div className="flex flex-column justify-center">
-      <div className="mr-10">
+      <h1 className="text-4xl text-center">Modify JSON Info</h1>
+      <div className="flex flex-column justify-center">
+        <div className="mr-10">
+          <JsonEditor
+            jsonDataTitle={actualJsonDataTitle}
+            jsonData={actualJsonData}
+            handleJsonDataOnChange={handleActualJsonDataOnChange}
+            readOnlyState={readOnlyState}
+          />
+          <HidingOptions />
+          <HidingInfoPercentage />
+          <div className="my-6">
+            <ModifyJsonButton />
+          </div>
+        </div>
         <JsonEditor
-          jsonDataTitle={actualJsonDataTitle}
-          jsonData={actualJsonData}
-          handleJsonDataOnChange={handleActualJsonDataOnChange}
+          jsonDataTitle={modifiedJsonDataTitle}
+          jsonData={modifiedJsonData}
+          handleJsonDataOnChange={handleModifiedJsonDataOnChange}
           readOnlyState={readOnlyState}
         />
-        <HidingOptions />
-        <HidingInfoPercentage/>
-        <ModifyJsonButton />
       </div>
-      <JsonEditor
-        jsonDataTitle={modifiedJsonDataTitle}
-        jsonData={modifiedJsonData}
-        handleJsonDataOnChange={handleModifiedJsonDataOnChange}
-        readOnlyState={readOnlyState}
-      />
-    </div>
     </div>
   );
 };

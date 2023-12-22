@@ -48,7 +48,9 @@ const Analytics = () => {
           handleJsonDataOnChange={handleOriginalJsonDataOnChange}
           readOnlyState={readOnlyState}
         />
-        <DistanceCalculateButton />
+         <div className="my-6">
+            <DistanceCalculateButton />
+          </div>
       </div>
       <JsonEditor
         jsonDataTitle={reconstructedJsonDataTitle}
